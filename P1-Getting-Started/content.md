@@ -39,7 +39,7 @@ When you are building interfaces on the other hand. The `Utility Area` is basica
 Lets jump right into the _Navigator_ on the left side. Currently, it should display the _Project Navigator_ which is where you will find files related to your project. If the files are not in here, many components of your app will not be aware of them, even if they are in the same folder! There are ways for more advanced projects to automatically _bundle_ or include files into your app, but for now, anything not in there, should be considered not part of your app. If you do not see something similar to the screenshot below, then you need to select `View -> Navigators -> Show Project Navigator`, click the little folder icon on top of the navigator, or use the keyboard shortcut command-1.
 ![Project Navigator](project_navigator.png)
 
-We will continue to discuss navigators, but for now, lets test out that debug area. The default behavior setting said that it would display the debug area if there was some output. So lets make some.
+As you progress and work on larger projects, the true power of this `Navigator` will reveal itself. We will continue to discuss navigators, but for now, lets test out that debug area. The default behavior setting said that it would display the debug area if there was some output. So lets make some.
 [action]
 1. Select `AppDelegate.swift` from the project navigator.
 1. Find this block of code:
@@ -59,4 +59,4 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 
 1. Hit `Run` or the `Play` button on the top left.
 
-Once you see the white screen of your app in the simulator, you should see the `Debug Area` popped up, with our _console_ output from the `print` statement. See how its starting to feel a little crowded (if you are on a laptop)? You can hide the debug area now by using the keyboard shortcut, the view menu, or, the little `triangle in a box` icon on the top of the debug area.
+Once you see the white screen of your app in the simulator, you should see the `Debug Area` popped up, with our _console_ output from the `print` statement. See how its starting to feel a little crowded (if you are on a laptop)? You can hide the debug area now by using the keyboard shortcut, the view menu, the `bottom of the window` button on the top right of the window, or, the little `triangle in a box` icon on the top of the debug area. There are a lot of ways to do even the simplest things in _Xcode_ so keep that in mind as you read tutorials, search for answers, and ask your peers for help. As you gain experience, you may be more productive with shortcuts, but if you have to teach someone else, you may want to start with the long way.
