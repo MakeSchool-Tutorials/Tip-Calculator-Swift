@@ -60,3 +60,17 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 1. Hit `Run` or the `Play` button on the top left.
 
 Once you see the white screen of your app in the simulator, you should see the `Debug Area` popped up, with our _console_ output from the `print` statement. See how its starting to feel a little crowded (if you are on a laptop)? You can hide the debug area now by using the keyboard shortcut, the view menu, the `bottom of the window` button on the top right of the window, or, the little `triangle in a box` icon on the top of the debug area. There are a lot of ways to do even the simplest things in _Xcode_ so keep that in mind as you read tutorials, search for answers, and ask your peers for help. As you gain experience, you may be more productive with shortcuts, but if you have to teach someone else, you may want to start with the long way.
+
+Now its time to dive into the `Utility Area`. Everything in the development world has choices. And when it comes to making iOS apps, we have a choice in how we setup the graphical interface for our app. You can do it _programmatically_ with code or, you can do it graphically using the integrated _Interface Builder_. Yes, this is the tool first released in 1988 and its better than ever! If its so good, why would you want to do it any other way? Thats a great question. Usually when you have more than one person working on an app, it is impossible to merge changes made to these interface files. Also, in the past, this tool did not provide much extra utility over writing your interfaces in code. But as time progressed, new iPhones came out with different screen sizes, and Apple introduced Auto-Layout. No, its not fully automatic, but if you are a solo developer, you need these tools to build apps that work seamlessly on different sized devices. They are also available in code, but we are going to get started with them graphically. We have a `Single View Application` so this is going to be as simple as it can get.
+
+
+[action]
+1. Select `Main.storyboard` from the project navigator.
+
+![Main.storyboard](storyboard_screenshot.png)
+
+Bask in its glory! In the `Utility Area` you can see `No Selection` prominently displayed where all the utilities should be, and some choices underneath in the `Object Browser`. Lets keep rolling.
+
+[action]
+1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
+1. Click and drag the `Label` into the white square in the middle of the screen.
