@@ -51,11 +51,11 @@ As you progress and work on larger projects, the true power of this `Navigator` 
 
 1. Add `print("Hello World!")` so that it looks like this:
 >
-func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-  // Override point for customization after application launch.
-  print("Hello World!")
-  return true
-}
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+      // Override point for customization after application launch.
+      print("Hello World!")
+      return true
+    }
 
 1. Hit `Run` or the `Play` button on the top left.
 
@@ -69,8 +69,21 @@ Now its time to dive into the `Utility Area`. Everything in the development worl
 
 ![Main.storyboard](storyboard_screenshot.png)
 
-Bask in its glory! In the `Utility Area` you can see `No Selection` prominently displayed where all the utilities should be, and some choices underneath in the `Object Browser`. Lets keep rolling.
+Bask in its glory! In the `Utility Area` you can see `No Selection` prominently displayed where all the utilities should be, and some choices underneath in the `Object Browser`. Let's keep rolling.
 
 [action]
 1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
 1. Click and drag the `Label` into the white square in the middle of the screen.
+1. The `Label` should be selected (you can tell by the box with resizing controls) and in the `Utility Area` there should be `Label` controls.
+
+Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
+
+[action]
+1. In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator`
+
+Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that they would have killed for back in 1988. `Constraints` are an important part of a system called `Auto-Layout` that we can use to design our interface once, and have it adjust to different phone sizes. It doesn't stop there, it can help if you want to support rotating the device, or other languages.
+
+[action]
+---------video---------- of adding constraints to the tip calculator label.
+
+Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit 20 pixels from the top, 20 pixels from the left, and 20 from the right. These are not magic numbers, and as you progress, you will get a better idea for how things should look on the screen of a handheld device. Apple has so many thoughts on the subject, that they publish _Human Interface Guidelines_ that you can follow the rules they propose for all _user interfaces_ that you design. Also, in the future you will probably work with designers who will spend large amounts of time thinking about how things should look, and then you can translate their design into the right values for the interface. For now, we have selected `20`.
