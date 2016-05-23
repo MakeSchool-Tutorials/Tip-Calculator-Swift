@@ -87,3 +87,28 @@ Uh oh. The label is too small to display the full text. We could use the little 
 ---------video---------- of adding constraints to the tip calculator label.
 
 Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit 20 pixels from the top, 20 pixels from the left, and 20 from the right. These are not magic numbers, and as you progress, you will get a better idea for how things should look on the screen of a handheld device. Apple has so many thoughts on the subject, that they publish _Human Interface Guidelines_ that you can follow the rules they propose for all _user interfaces_ that you design. Also, in the future you will probably work with designers who will spend large amounts of time thinking about how things should look, and then you can translate their design into the right values for the interface. For now, we have selected `20`.
+
+Next, we are going to need some place for the user to put in the amount of the bill.
+
+[action]
+---------video---------- adding an input with constraints.
+
+script: steps for the video
+1. type label in the the object browser filter box
+1. drag label to the view
+1. change label text to `Bill Amount`
+1. right click and drag from label to view. select `center horizontally`
+1. choose the `size inspector`
+1. change the `align center x to` to `-50` (make sure to hit `-` twice)
+1. right click and drag from the label to the `Tip Calculator` label and select `Top`
+1. change the `Align Top To: Tip Calculator` to `50`
+1. click on the label again and `update frame`
+1. clear and type field in the the object browser filter box
+1. drag textfield to the view
+1. right click and drag from label to view. select `center horizontally`
+1. change the `align center x to` to `-50` (make sure to hit `-` twice)
+1. right click and drag from the label to the `Tip Calculator` label and select `Top`
+1. change the `Align Top To: Tip Calculator` to `50`
+1. right click and drag from the label to the `Bill Amount` label and select `Equal Heights`
+1. click the `Pin` button and set the `Width` to 75
+1. click on the label again and `update frame`
