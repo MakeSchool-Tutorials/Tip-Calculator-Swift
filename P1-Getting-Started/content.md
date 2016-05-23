@@ -144,8 +144,46 @@ things that we might have to change:
 1. run the app and see how everything is messed up now. rotate to see again how its messed up. rotate back to see how its consistent at being messed up.
 
 
+[script]: video for deleting/editing the automatic constraints
+1. use shift to select all the `Tip %:` and `15% 18%` constraints. and then hit delete to delete them.
+1. right click and drag from `Tip %:` to `Bill Amount:`. select `Leading`.
+1. right click and drag from the `Segmented Control` to the `Text Field` select `Trailing`.
+1. update frames
 
+content about the UI elements floating to the top. why did they do that?
 
+[script]: video for spacing the new elements to the old ones
+1. right click and drag from `Tip %:` to the `Bill Amount` label and select `Top`
+1. change the `Align Top To: Bill Amount` to `50`
+1. click on the label again and `update frame`
+1. right click and drag from from the `Segmented Control` to the `Text Field` and select `Top`
+1. change the `Align Top To: Round Style...` to `50`
+1. click on the label again and `update frame`
 
+[action]
+1. run the app and see how everything is looking much more consistent. rotate to see again how stays consistent. rotate back to see how its good.
+
+preview ui in xcode. other than "update frames" you can use the `Assistant Editor`. talk about the assistant editor.
+
+[action]
+1. click on the linked rings/venn diagram (needs screenshot) to open the `Assistant Editor`.
+1. Set it to preview (with screenshot)
+1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 5.5 inch'
+1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 4 inch'
+1. Close the `Navigation Area` [screenshot for button] to make more space.
+1. Drag the divider between the `editors` to make more space
+
+now you should have some sample devices without having to launch your code. talk about the limitations of this. talk about having two `iPhone 4 inch` so that you can see landscape mode
+
+[script]: steps for the video
+1. option click and drag the `Tip %:` label down a little bit.
+1. double-click the new `Tip %:` label and change text to `Tip Amount:` and then hit enter
+1. option click and drag the `Tip Amount:` label down a little bit.
+1. double-click the new `Tip Amount:` label and change text to `Total Amount:` and then hit enter
+unconfirmed steps:
+1. right click and drag from `Tip Amount:` to the `Tip %` label and select `Top`
+1. change the `Align Top To: Tip %` to `50`
+1. right click and drag from `Total Amount:` to the `Tip Amount` label and select `Top`
+1. change the `Align Top To: Tip Amount` to `50`
 
 Segment 3: (ironically named after making 3 segments)
