@@ -93,10 +93,10 @@ Next, we are going to need some place for the user to put in the amount of the b
 [action]
 ---------video---------- adding an input with constraints.
 
-script: steps for the video
+[script]: steps for the video
 1. type label in the the object browser filter box
 1. drag label to the view
-1. change label text to `Bill Amount`
+1. change label text to `Bill Amount:`
 1. right click and drag from label to view. select `center horizontally`
 1. choose the `size inspector`
 1. change the `align center x to` to `-50` (make sure to hit `-` twice)
@@ -112,3 +112,40 @@ script: steps for the video
 1. right click and drag from the label to the `Bill Amount` label and select `Equal Heights`
 1. click the `Pin` button and set the `Width` to 75
 1. click on the label again and `update frame`
+
+things to explain:
+* `Pinning`
+* constraints are first class citizens because of OOP.
+
+things that we might have to change:
+* separating steps so that we can see why they are required
+
+
+[script]: steps for the video
+1. option click and drag the `Bill Amount:` label down a little bit.
+1. double-click the new `Bill Amount:` label and change text to `Tip %:` and then hit enter
+1. clear object browser filter and type in `segment`
+1. drag segmented control
+1. select `Attributes Inspector`
+1. Increase number of segments to `3`
+1. Double click `First` and change to `15%`
+1. Double click `Second` and change to `18%`
+1. Double click ` ` (the empty third one) and change to `20%`
+
+[action]
+1. run the app and rotate the simulator to see how things move around without pinning and the proper setup
+
+
+[action]
+1. click the `Segmented Control` and click `Add Missing Constraints`
+1. click the `Tip %:` and click `Add Missing Constraints`
+
+[action]
+1. run the app and see how everything is messed up now. rotate to see again how its messed up. rotate back to see how its consistent at being messed up.
+
+
+
+
+
+
+Segment 3: (ironically named after making 3 segments)
