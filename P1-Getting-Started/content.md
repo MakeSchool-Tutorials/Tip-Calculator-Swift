@@ -1,3 +1,6 @@
+This is much more of a tutorial about Xcode then it is about programming. If you have never used an IDE before, this will get you acquainted with the minimum required knowledge to be proficient in Xcode, and even give you a taste of some of the more advanced stuff.
+
+
 1. Open _Xcode_
 1. From the `File` menu, select `New` and then `Project`
 1. Under `iOS` select `Application` and then select `Single View Application` and click `Next`
@@ -150,7 +153,7 @@ things that we might have to change:
 1. right click and drag from the `Segmented Control` to the `Text Field` select `Trailing`.
 1. update frames
 
-content about the UI elements floating to the top. why did they do that?
+content about the UI elements floating to the top. why did they do that? This is programming. In programming, the device does exactly what you tell it to. Nothing more, and nothing less. Most of the time, when something seems unexpected, you will feel like the device actually did more, or less. Almost every single time, that is not the case. Its user error. Now, you may not have been the user that made the error. But since you built on top of someone else's error, its at least your problem now. If this error proves to be critical, you will have to _work-around_ it, file a bug report, or maybe even fix it yourself. But we're not talking about low-level components of the operating system here, or even Xcode. We are talking about _auto-layout_! So how do we fix it? More contraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run. If you don't beleive me, hover over (give an example of something in the attributes inspector) and bask in the glory of the Objective-C message equivalent that will actually get run on your users devices.
 
 [script]: video for spacing the new elements to the old ones
 1. right click and drag from `Tip %:` to the `Bill Amount` label and select `Top`
