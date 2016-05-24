@@ -180,10 +180,22 @@ now you should have some sample devices without having to launch your code. talk
 1. double-click the new `Tip %:` label and change text to `Tip Amount:` and then hit enter
 1. option click and drag the `Tip Amount:` label down a little bit.
 1. double-click the new `Tip Amount:` label and change text to `Total Amount:` and then hit enter
-unconfirmed steps:
 1. right click and drag from `Tip Amount:` to the `Tip %` label and select `Top`
+1. right click and drag from `Tip Amount:` to the `Tip %` label and select `Leading`
 1. change the `Align Top To: Tip %` to `50`
 1. right click and drag from `Total Amount:` to the `Tip Amount` label and select `Top`
+1. right click and drag from `Total Amount:` to the `Tip Amount` label and select `Leading`
 1. change the `Align Top To: Tip Amount` to `50`
+1. option click and drag the text field next to the `Bill Amount` label down to line up with the `Tip Amount Label`.
+1. right click and drag from the new text field to the view. select `center horizontally`
+1. change the `align center x to` to `50`
+1. right click and drag from the new text field to the `Tip Amount` label and select `Equal Heights`
+1. option click and drag the new text field next to the `Tip Amount` label down to line up with the `Total Amount Label`.
+1. right click and drag from the new text field to the view. select `center horizontally`
+1. change the `align center x to` to `50`
+1. right click and drag from the new text field to the `Total Amount` label and select `Equal Heights`
+
+
+
 
 Segment 3: (ironically named after making 3 segments)
