@@ -275,3 +275,8 @@ code for calculation
 * typo on outlet connection
 * make other fields read-only
 * style/logo updates
+* break code into steps: (some step ideas)
+  * first only update on did end
+  * then update on change
+  * then the `tip %` change event
+  * then refactor the code
