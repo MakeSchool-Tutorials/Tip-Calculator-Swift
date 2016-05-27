@@ -211,4 +211,67 @@ Segment 3: (ironically named after making 3 segments)
 
 wiring it up:
 1. click on the linked rings above the `Preview` in the `Assistant Editor` and change it to `Automatic`. It should now show `ViewController.swift` in the `Assistant Editor`. You can verify this by finding our `print("Hello World")` line.
-1.
+1. Drag the divider between the `editors` to make more space
+1. Close the `Debugger Area` (icon screenshot) or command-shift-y
+
+[script]: steps for wiring it up:
+1. control click drag from `bill amount` label to under the `class ViewContoller` line and call the field `billAmountField`
+1. control click drag from the `% selector` and call the field `tipSelector`
+1. control click drag from the `tip amount` label and call the field `tipAmountField`
+1. control click drag from the `total amount` label and call the field `totalAmountField`
+1. control click drag from `bill amount` label to and choose `Action` and `Value Changed` and call it `billAmountChanged`
+1. control click drag from `tip selector` label to and choose `Action` and `Value Changed` and call it `tipChanged`
+1. add some space between the functions
+
+[action]
+code for calculation
+>@IBAction func billAmountChanged(sender: AnyObject) {
+    guard Double(billAmountField.text!) != nil else {
+      //show error
+      tipAmountField.text = ""
+      totalAmountField.text = ""
+      return
+    }
+>
+    var tipPercentage = 0.0
+>
+    switch tipSelector.selectedSegmentIndex {
+    case 0:
+      tipPercentage = 0.15
+    case 1:
+      tipPercentage = 0.18
+    case 2:
+      tipPercentage = 0.20
+    default:
+      break
+    }
+>
+    let billAmount = Double(billAmountField.text!)!
+    let roundedBillAmount = round(100*billAmount)/100
+    let tipAmount = roundedBillAmount * tipPercentage
+    let roundedTipAmount = round(100*tipAmount)/100
+    let totalAmount = roundedBillAmount + roundedTipAmount
+>
+>
+    if (!billAmountField.editing) {
+      billAmountField.text = String(format: "%.2f", roundedBillAmount)
+    }
+    tipAmountField.text = String(format: "%.2f", roundedTipAmount)
+    totalAmountField.text = String(format: "%.2f", totalAmount)
+>
+>
+  }
+>
+  @IBAction func tipChanged(sender: AnyObject) {
+  }
+
+
+
+## Update the styles
+
+
+
+### to do:
+* typo on outlet connection
+* make other fields read-only
+* style/logo updates
