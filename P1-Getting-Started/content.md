@@ -274,6 +274,11 @@ code for calculation
 ### to do:
 * typo on outlet connection
 * make other fields read-only
+> 1. Select the `Bill Amount Field` and using the `Attributes Inspector`, set the `Keyboard Type` to `Decimal Pad`
+> 1. Select the `Tip Amount Field` and using the `Attributes Inspector`, disable this field by unchecking `Enabled` in the `Control` section.
+> 1. Do the same for `Total Amount Field`
+>
+>
 * style/logo updates
 * break code into steps: (some step ideas)
   * first only update on did end
