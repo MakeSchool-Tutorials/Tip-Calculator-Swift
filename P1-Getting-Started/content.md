@@ -173,7 +173,7 @@ preview ui in xcode. other than "update frames" you can use the `Assistant Edito
 1. Set it to preview (with screenshot)
 1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 5.5 inch'
 1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 4 inch'
-1. Close the `Navigation Area` [screenshot for button] to make more space.
+1. Close the `Navigation Area` [screenshot for button] to make more space. (or command-0)
 1. Drag the divider between the `editors` to make more space
 
 now you should have some sample devices without having to launch your code. talk about the limitations of this. talk about having two `iPhone 4 inch` so that you can see landscape mode
@@ -199,6 +199,16 @@ now you should have some sample devices without having to launch your code. talk
 1. right click and drag from the new text field to the `Total Amount` label and select `Equal Heights`
 
 
+## Running it on your device
+
+
+
 
 
 Segment 3: (ironically named after making 3 segments)
+
+
+
+wiring it up:
+1. click on the linked rings above the `Preview` in the `Assistant Editor` and change it to `Automatic`. It should now show `ViewController.swift` in the `Assistant Editor`. You can verify this by finding our `print("Hello World")` line.
+1.
