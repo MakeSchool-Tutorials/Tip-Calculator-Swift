@@ -153,7 +153,7 @@ things that we might have to change:
 1. right click and drag from the `Segmented Control` to the `Text Field` select `Trailing`.
 1. update frames
 
-content about the UI elements floating to the top. why did they do that? This is programming. In programming, the device does exactly what you tell it to. Nothing more, and nothing less. Most of the time, when something seems unexpected, you will feel like the device actually did more, or less. Almost every single time, that is not the case. Its user error. Now, you may not have been the user that made the error. But since you built on top of someone else's error, its at least your problem now. If this error proves to be critical, you will have to _work-around_ it, file a bug report, or maybe even fix it yourself. But we're not talking about low-level components of the operating system here, or even Xcode. We are talking about _auto-layout_! So how do we fix it? More contraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run. If you don't beleive me, hover over (give an example of something in the attributes inspector) and bask in the glory of the Objective-C message equivalent that will actually get run on your users devices.
+content about the UI elements floating to the top. why did they do that? This is programming. In programming, the device does exactly what you tell it to. Nothing more, and nothing less. Most of the time, when something seems unexpected, you will feel like the device actually did more, or less. Almost every single time, that is not the case. Its user error. Now, you may not have been the user that made the error. But since you have built on top of someone else's error, it is at least your problem now. If this error proves to be critical, you will have to _work-around_ it, file a bug report, or maybe even fix it yourself. But we're not talking about low-level components of the operating system here, or even Xcode. We are talking about _auto-layout_! So how do we fix it? More constraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run. If you don't believe me, hover over (give an example of something in the attributes inspector) and bask in the glory of the Objective-C message equivalent that will actually get run on your users devices.
 
 [script]: video for spacing the new elements to the old ones
 1. right click and drag from `Tip %:` to the `Bill Amount` label and select `Top`
@@ -215,7 +215,7 @@ wiring it up:
 1. Close the `Debugger Area` (icon screenshot) or command-shift-y
 
 [script]: steps for wiring it up:
-1. control click drag from `bill amount` label to under the `class ViewContoller` line and call the field `billAmountField`
+1. control click drag from `bill amount` label to under the `class ViewController` line and call the field `billAmountField`
 1. control click drag from the `% selector` and call the field `tipSelector`
 1. control click drag from the `tip amount` label and call the field `tipAmountField`
 1. control click drag from the `total amount` label and call the field `totalAmountField`
@@ -265,6 +265,45 @@ code for calculation
   @IBAction func tipChanged(sender: AnyObject) {
   }
 
+
+## Unlinking
+
+If you look at the code we wrote for `billAmountChanged` it can look at all the inputs (not just the `Bill Amount`) but the `Tip% Selector` as well. So lets link up the `Tip% Selector` to `billAmountChanged` and delete `tipChanged`.
+
+
+Now, lets test it out...
+1. Run the project
+1. Type in a bill amount
+1. Click `18%`
+1. It crashed!!!!
+
+Why did it crash? Very simple, your `Main.storyboard` has the `Tip % Selector` wired up to two functions, and when it called one of them, it crashed. `reason: -[TipPro.ViewController tipChanged:]: unrecognized selector sent` This is objective-c syntax for `message passing` which in Swift, would be the equivalent of calling a function. Think of it as `ViewController.tipChanged(something)`. It crashed because that doesn't exist. So lets unlink it, and try again.
+
+1. Open `Main.storyboard`
+1. Right(control)-click on the `Tip % Selector`
+1. In the pop-up window [screenshot] click the `X` next to `Value Changed` that says `ViewController tipChanged`. Close the pop-up.
+1. Since we already have the function defined that we want to connect to, right(control)-click and drag from the `Tip % Selector` to the `View Controller` in the _hierarchy_ of your storyboard under `View Controller Scene`.
+1. Select `billAmountChanged`
+1. Run
+1. Type in a bill amount
+1. Click `18%`
+1. Success!!!
+
+
+Now, lets change `billAmountChanged` to `updateTip`. For this, try it on your own first. It is ok, if you wound up doing something different then these instructions, as long as it works.
+
+1. Open `ViewController.swift`
+1. Rename `billAmountChanged` to `updateTip`
+1. Open `Main.storyboard`
+1. Right(control)-click on the `Bill Amount `
+1. In the pop-up window click the `X` next to `Editing did end` that says `ViewController billAmountChanged` and click the `X` next to `Editing Changed` that says `ViewController billAmountChanged`.
+1. Drag from the circle next to `Editing Changed`  to the `View Controller` in the _hierarchy_. Let go and select `updateTip`
+1. Drag from the circle next to `Editing did End`  to the `View Controller` in the _hierarchy_. Let go and select `updateTip`
+1. Close the pop-up.
+1. Right(control)-click on the `Tip % Selector`
+1. In the pop-up window click the `X` next to `Value Changed` that says `ViewController billAmountChanged`.
+1. Drag from the circle next to `Value Changed` to the `View Controller` in the _hierarchy_. Let go and select `updateTip`
+1. Close the pop-up.
 
 
 ## Update the styles
