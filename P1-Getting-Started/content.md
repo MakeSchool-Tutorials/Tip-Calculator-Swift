@@ -308,6 +308,12 @@ Now, lets change `billAmountChanged` to `updateTip`. For this, try it on your ow
 
 ## Update the styles
 
+1. {steps to add the images to xcode}
+1. Open `Main.Storyboard`
+1. clear and type `image` in the the object browser filter box
+1. drag imageview to the view
+1. in the `attributes selector` change `image` to `logo`
+1. add the constraints [screenshot]
 
 
 ### to do:
@@ -324,5 +330,3 @@ Now, lets change `billAmountChanged` to `updateTip`. For this, try it on your ow
 * break code into steps: (some step ideas)
   * first only update on did end
   * then update on change
-  * then the `tip %` change event
-  * then refactor the code
