@@ -314,19 +314,23 @@ Now, lets change `billAmountChanged` to `updateTip`. For this, try it on your ow
 1. drag imageview to the view
 1. in the `attributes selector` change `image` to `logo`
 1. add the constraints [screenshot]
+1. run the app and rotate the simulator to see how things look.
+
+With an on-screen keyboard, the landscape mode is going to look weird, so lets disable rotation.
+
+1. In the `Project Navigator` select the `TipPro` project, which will be the first item listed. Its the root of everything.
+1. Under the tab `General` (which should already be selected) look under the `Deployment Info` section for the `Device Orientation` options.
+[screenshot?]
+1. Deselect `Landscape Left` and `Landscape Right` so that `Portrait` is the only option left.
+[screenshot afterwards?]
+1. run the app and rotate the simulator to see how things look.
 
 
-### to do:
-* typo on outlet connection
+
+## Changes after running on device
 * after running on device, change the software keyboard:
 > 1. Select the `Bill Amount Field` and using the `Attributes Inspector`, set the `Keyboard Type` to `Decimal Pad`
-
 * make other fields read-only
 > 1. Select the `Tip Amount Field` and using the `Attributes Inspector`, disable this field by unchecking `Enabled` in the `Control` section.
 > 1. Do the same for `Total Amount Field`
 >
-
-* style/logo updates
-* break code into steps: (some step ideas)
-  * first only update on did end
-  * then update on change
