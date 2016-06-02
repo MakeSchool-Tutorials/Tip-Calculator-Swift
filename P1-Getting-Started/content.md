@@ -325,6 +325,35 @@ With an on-screen keyboard, the landscape mode is going to look weird, so lets d
 [screenshot afterwards?]
 1. run the app and rotate the simulator to see how things look.
 
+## Splash of color
+1. Open `Main.Storyboard`
+1. Select the `Tip Calculator` label.
+1. In the `Attributes Inspector` under `View` click on the `Background` attribute which is currently set looks like this: [screenshot]. This represents the default setting, which is fully transparent.
+1. A color selection window has popped up. Click on the _eye-dropper_ to select the color in the same way a real eye-dropper or turkey baster would suck up liquid. Its on the bottom of the `Colors` palette, and if you have never seen one before, it also looks like a knife.
+1. Once you click it, you will notice your cursor has turned into a virtual _loupe_. (The thing jewelers use to look at diamonds, or graphic designers use to look at detail. In this case, both are relevant, since the graphic design we care about, is a diamond.)
+1. Move the _loupe_ over the blue part of the _Make School_ logo and click to select that color.
+
+Notice the background color for the label change? Perfect. Now lets change the text color to white, and make the label bigger for a more dramatic effect.
+
+1. Close the colors selector. (It is blocking the next setting we want to click)
+1. Now, notice the `Color` setting, currently set to black. Click the right side of that control (the blue part with arrowheads or carets), and select `White Color` from the drop down menu.
+1. Under the `Size Inspector`, set the `Top Space`, `Leading Space` and `Trailing Space` to `0` using the `edit` button on each of the settings.
+1. Using the `Pin` icon, at the bottom of the storyboard editor, set the `Height` to `50`.
+
+1. Select the `Bill Amount` label, and under the `Size Inspector`, double-click on the `Top Space to Tip Calculator`.
+1. Update the `Second Item` to `Bottom`, and change the `Constant` to `10`
+1. Repeat the same with the `Bill Amount Field`.
+
+1. Select the `Tip Calculator` label.
+1. Under the `Size Inspector`, set the `Top Space`, `Leading Space` and `Trailing Space` to `-20` using the `edit` button on each of the settings.
+1. Open `ViewController.swift` and add the following code:
+>
+override func preferredStatusBarStyle() -> UIStatusBarStyle {
+  return .LightContent
+}
+
+
+
 
 
 ## Changes after running on device
