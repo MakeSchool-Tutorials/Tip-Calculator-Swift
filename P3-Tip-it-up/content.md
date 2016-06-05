@@ -102,6 +102,33 @@ Now, lets change `billAmountChanged` to `updateTip`. For this, try it on your ow
 
 ## Update the styles
 
+##Adding Assets to an App
+
+> [action]
+> TODO: update the link
+[Download the art pack for this tutorial!](https://s3.amazonaws.com/mgwu-misc/SA2015/Makestagram_Art.zip)
+
+All assets used within an iOS app are stored in *Asset catalogs*. Every iOS projects that you create with Xcode comes with one default asset catalog called *Images.xcassets*:
+
+![image](asset_catalog.png)
+
+That asset catalog contains one resource for the App's icon. You add new resources to your app by creating new entries (called *Image Sets*) in this asset catalog. You can also create multiple asset catalogs which is useful for apps with huge amounts of images.
+
+Let's briefly discuss some important concepts about asset handling on iOS. You probably have realized that we're providing three different image files for each asset we wanted to use in our App (*@1x*, *@2x* and *@3x*). These different images have different resolutions, each suited to a specific type of iOS devices with a different screen resolution. The *@1x* assets are used for the oldest iOS devices, e.g. iPhone 3Gs, which don't have retina displays. The *@2x* images are used for the 3.5 and 4 inch retina screens of the iPhone 4(S) and iPhone 5(S). Finally, the *@3x* images are used by the iPhone 6 and iPhone 6 Plus. In most cases you won't have to spend too much time thinking about this, as long as you provide assets in all relevant resolutions.
+
+Applications that designers use such as _Sketch_ allow *exporting* all versions at the same time. And applications like _Xcode_ allow *importing* all versions at the same time.
+
+Let's do that now!
+> [action]
+Unzip the downloaded art pack, and click the small `+` icon at the bottom of the list that has only `AppIcon` in it. Select `Import` from the pop-up menu. Select the unzipped art folder and bam!
+>
+Note: if you don't name the files this way, you have to manually import each version of each asset, and it takes up way more time.
+>
+![image](all_assets.png)
+
+You should also note that we don't reference images in asset catalogs by their file name, but instead by the name of their Image Set. For this project, we only have "logo" but in the future we'll have more. Also, for this project we cheated because all three files are the same size. If you have an app with many assets, this will make your life more painful, and possibly make your app slower.
+
+
 1. {steps to add the images to xcode}
 1. Open `Main.Storyboard`
 1. clear and type `image` in the the object browser filter box
