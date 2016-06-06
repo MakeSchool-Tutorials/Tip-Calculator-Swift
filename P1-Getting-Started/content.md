@@ -5,7 +5,7 @@
 1. For `Organization Name` you can enter your name, your fake company name, or `Make School`
 1. For `Organization Identifier`, you use a reverse domain name style base for your apps. If you own `supercoolsecretstudios.com` you would put `com.supercoolsecretstudios`. If you don't own a domain name, feel free to put `com.makeschool` for this project.
 1. Select `Swift` as the `Language` and `iPhone` as the `Devices`
-1. Make sure to select `Use Core Data` from the checkboxes below and for this tutorial, we will leave the other two boxes regarding _tests_ checked.
+1. For this tutorial, we will uncheck `Use Core Data` and leave the other two boxes regarding _tests_ checked.
 1. Click `Next` and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, _Xcode_ will handle it for you.
 1. Keep the `Create Git Repository on My Mac` checkbox selected, and click `Create`
 1. Check that your xcode project looks similar to this screenshot.

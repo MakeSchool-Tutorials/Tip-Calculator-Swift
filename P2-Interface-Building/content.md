@@ -1,13 +1,15 @@
 
-[action]
-1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
-1. Click and drag the `Label` into the white square in the middle of the screen.
-1. The `Label` should be selected (you can tell by the box with resizing controls) and in the `Utility Area` there should be `Label` controls.
+>[action]
+>
+>1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
+>1. Click and drag the `Label` into the white square in the middle of the screen.
+>1. The `Label` should be selected (you can tell by the box with resizing controls) and in the `Utility Area` there should be `Label` controls.
 
 Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
 
-[action]
-1. In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator`
+>[action]
+>
+>1. In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator`
 
 Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that they would have killed for back in 1988. `Constraints` are an important part of a system called `Auto-Layout` that we can use to design our interface once, and have it adjust to different phone sizes. It doesn't stop there, it can help if you want to support rotating the device, or other languages.
 
@@ -41,14 +43,6 @@ Next, we are going to need some place for the user to put in the amount of the b
 1. click the `Pin` button and set the `Width` to 75
 1. click on the label again and `update frame`
 
-things to explain:
-* `Pinning`
-* constraints are first class citizens because of OOP.
-
-things that we might have to change:
-* separating steps so that we can see why they are required
-
-
 [script]: steps for the video
 1. option click and drag the `Bill Amount:` label down a little bit.
 1. double-click the new `Bill Amount:` label and change text to `Tip %:` and then hit enter
@@ -60,16 +54,22 @@ things that we might have to change:
 1. Double click `Second` and change to `18%`
 1. Double click ` ` (the empty third one) and change to `20%`
 
-[action]
-1. run the app and rotate the simulator to see how things move around without pinning and the proper setup
+>[action]
+>
+>1. run the app and rotate the simulator to see how things move around without pinning and the proper setup
 
 
-[action]
-1. click the `Segmented Control` and click `Add Missing Constraints`
-1. click the `Tip %:` and click `Add Missing Constraints`
+>[action]
+>
+>1. click the `Segmented Control` and click `Add Missing Constraints`
+>1. click the `Tip %:` and click `Add Missing Constraints`
 
-[action]
-1. run the app and see how everything is messed up now. rotate to see again how its messed up. rotate back to see how its consistent at being messed up.
+
+
+
+>[action]
+>
+>1. run the app and see how everything is messed up now. rotate to see again how its messed up. rotate back to see how its consistent at being messed up.
 
 
 [script]: video for deleting/editing the automatic constraints
@@ -88,18 +88,20 @@ content about the UI elements floating to the top. why did they do that? This is
 1. change the `Align Top To: Round Style...` to `50`
 1. click on the label again and `update frame`
 
-[action]
-1. run the app and see how everything is looking much more consistent. rotate to see again how stays consistent. rotate back to see how its good.
+>[action]
+>
+>1. run the app and see how everything is looking much more consistent. rotate to see again how stays consistent. rotate back to see how its good.
 
 preview ui in xcode. other than "update frames" you can use the `Assistant Editor`. talk about the assistant editor.
 
-[action]
-1. click on the linked rings/venn diagram (needs screenshot) to open the `Assistant Editor`.
-1. Set it to preview (with screenshot)
-1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 5.5 inch'
-1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 4 inch'
-1. Close the `Navigation Area` [screenshot for button] to make more space. (or command-0)
-1. Drag the divider between the `editors` to make more space
+>[action]
+>
+>1. click on the linked rings/venn diagram (needs screenshot) to open the `Assistant Editor`.
+>1. Set it to preview (with screenshot)
+>1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 5.5 inch'
+>1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 4 inch'
+>1. Close the `Navigation Area` [screenshot for button] to make more space. (or command-0)
+>1. Drag the divider between the `editors` to make more space
 
 now you should have some sample devices without having to launch your code. talk about the limitations of this. talk about having two `iPhone 4 inch` so that you can see landscape mode
 
