@@ -57,6 +57,8 @@ Why did they do that? This is programming. In programming, the device does exact
 >[action]
 >
 >1. video spacing.mp4
+>1. hmmm... its still a little off. lets fix that.
+>1. video center_vertically.mp4
 >1. run the app and see how everything is looking much more consistent. rotate to see again how stays consistent. rotate back to see how its good.
 
 We have previewing our UI by running the app. Which can get annoying if you are working somewhere deep in the app, and want to test it out on multiple devices. You can use the `Assistant Editor` to display a preview of the screen you are working on across multiple devices.

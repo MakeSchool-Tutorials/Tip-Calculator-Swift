@@ -44,6 +44,12 @@
 1. change the `Align Top To: Round Style...` to `50`
 1. click on the label again and `update frame`
 
+[script]: video center_vertically.mp4
+1. control click and drag from the tip selector to the `tip %` label and choose center vertically.
+1. update frames.
+
+
+
 [script]: ------video------- final_controls.mp4
 1. option click and drag the `Tip %:` label down a little bit.
 1. double-click the new `Tip %:` label and change text to `Tip Amount:` and then hit enter
