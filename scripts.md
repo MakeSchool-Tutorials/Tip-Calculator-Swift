@@ -51,6 +51,7 @@
 
 
 [script]: ------video------- final_controls.mp4
+(had to modify to use the pin menu)
 1. option click and drag the `Tip %:` label down a little bit.
 1. double-click the new `Tip %:` label and change text to `Tip Amount:` and then hit enter
 1. option click and drag the `Tip Amount:` label down a little bit.
