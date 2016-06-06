@@ -94,7 +94,7 @@ Now, lets change `billAmountChanged` to `updateTip`. For this, try it on your ow
 >1. Rename `billAmountChanged` to `updateTip`
 >1. Open `Main.storyboard`
 >1. Right(control)-click on the `Bill Amount `
->1. In the pop-up window click the `X` next to `Editing did end` that says `ViewController billAmountChanged` and click the `X` next to `Editing Changed` that says `ViewController billAmountChanged`.
+>1. In the pop-up window click the `X` next to `Editing did end` that says `ViewController billAmountChanged`
 >1. Drag from the circle next to `Editing Changed`  to the `View Controller` in the _hierarchy_. Let go and select `updateTip`
 >1. Drag from the circle next to `Editing did End`  to the `View Controller` in the _hierarchy_. Let go and select `updateTip`
 >1. Close the pop-up.
