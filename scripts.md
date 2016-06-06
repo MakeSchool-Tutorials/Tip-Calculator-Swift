@@ -70,3 +70,12 @@
 1. right click and drag from the new text field to the view. select `center horizontally`
 1. change the `align center x to` to `50`
 1. right click and drag from the new text field to the `Total Amount` label and select `Equal Heights`
+
+[script]: wiring_it_up.mp4
+1. control click drag from `bill amount` label to under the `class ViewController` line and call the field `billAmountField`
+1. control click drag from the `% selector` and call the field `tipSelector`
+1. control click drag from the `tip amount` label and call the field `tipAmountField`
+1. control click drag from the `total amount` label and call the field `totalAmountField`
+1. control click drag from `bill amount` label to and choose `Action` and `Value Changed` and call it `billAmountChanged`
+1. control click drag from `tip selector` label to and choose `Action` and `Value Changed` and call it `tipChanged`
+1. add some space between the functions

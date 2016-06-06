@@ -8,18 +8,7 @@ Segment 3: (ironically named after making 3 segments)
 >1. click on the linked rings above the `Preview` in the `Assistant Editor` and change it to `Automatic`. It should now show `ViewController.swift` in the `Assistant Editor`. You can verify this by finding our `print("Hello World")` line.
 >1. Drag the divider between the `editors` to make more space
 >1. Close the `Debugger Area` (icon screenshot) or command-shift-y
-
-[script]: steps for wiring it up:
-1. control click drag from `bill amount` label to under the `class ViewController` line and call the field `billAmountField`
-1. control click drag from the `% selector` and call the field `tipSelector`
-1. control click drag from the `tip amount` label and call the field `tipAmountField`
-1. control click drag from the `total amount` label and call the field `totalAmountField`
-1. control click drag from `bill amount` label to and choose `Action` and `Value Changed` and call it `billAmountChanged`
-1. control click drag from `tip selector` label to and choose `Action` and `Value Changed` and call it `tipChanged`
-1. add some space between the functions
-
->[action]
->
+> 1. video wiring_it_up.mp4
 >1. Overwrite the two new functions you created with the code below
 >
 >  @IBAction func billAmountChanged(sender: AnyObject) {
@@ -61,6 +50,10 @@ Segment 3: (ironically named after making 3 segments)
 >
     @IBAction func tipChanged(sender: AnyObject) {
     }
+>
+>1. Run it and give it a spin!
+
+
 
 
 
