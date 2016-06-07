@@ -1,6 +1,6 @@
+# Linking your interface to code
 
-Segment 3: (ironically named after making 3 segments)
-
+_Xcode_ makes it easy to connect your interface to code. We'll show you how to do that now. There are two main kinds of code connections: _outlets_, and _actions_. _Outlets_ let you assign a variable in code to a component of your interface you have created in your storyboard to interact with that component in code. We will use that to read and set values from our interface. _Actions_ let our code know when the user did certain things to an interface component that we want to react to.
 
 
 >[action]
