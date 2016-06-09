@@ -14,3 +14,14 @@ Running your code on your device used to be a complicated process that required 
 >1. Let _Xcode_ fix this issue for you by logging in with your `Apple ID` or `iCloud` account. This is the same you use to download apps in the _App Store_. If you do not have an `Apple ID` _Xcode_ will let you create one, and follow the onscreen steps in order to do so.
 >1. Click the `Run` button again.
 >You may get an error that the device is not available yet because it is processing symbols. If so, there will be a progress bar you can watch while you wait. Then you can run it again.
+
+But wait! Thats not all! Apple is very serious about security, and when you `side-load` apps, they have not been screened in the same way ones from the AppStore have, so you have to Trust the profile that _Xcode_ just created for you that lets you run apps on your phone.
+
+>[action]
+>
+>1. On your iPhone, open `Settings` and then `General` and then `Profiles and Device Management`
+>1. Select your `Apple ID`
+>1. Click `Trust <your Apple ID>`
+>1. Click `Trust` again.
+
+Great! Now you should be able to run the app. Try it again in _Xcode_.
