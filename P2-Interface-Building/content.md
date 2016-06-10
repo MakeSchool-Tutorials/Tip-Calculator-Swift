@@ -78,7 +78,7 @@ Next, we are going to need some place for the user to put in the amount of the b
 1. Right-click and drag from the label to the `Tip Calculator` label and select `Top`.
 1. Change the `Align Top To: Tip Calculator` to `50`.
 1. Right-click and drag from the label to the `Bill Amount` label and select `Equal Heights`.
-1. Pin the height to `75`
+1. Pin the `width` to `75`
 >
 > ![ms-video](../videos/bill_amount.mp4)
 
