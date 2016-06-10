@@ -20,7 +20,7 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 1. Control-click (or right-click) drag from the `% selector` and call the field `tipSelector`.
 1. Control-click (or right-click) drag from the `tip amount` label and call the field `tipAmountField`.
 1. Control-click (or right-click) drag from the `total amount` label and call the field `totalAmountField`.
-1. Control-click (or right-click) drag from `bill amount` label to and choose `Action` and `Value Changed` and call it. `billAmountChanged`.
+1. Control-click (or right-click) drag from `bill amount` label to the view controller. Choose `Action` and `Editing Did End` and call it billAmountChanged.
 1. Control-click (or right-click) drag from `tip selector` label to and choose `Action` and `Value Changed` and call it `tipChanged`.
 1. Add some space between the functions.
 >
