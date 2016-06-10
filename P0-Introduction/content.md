@@ -5,7 +5,7 @@ slug: getting-started
 
 ## Tutorial to the Tutorial
 
-This tutorial will walk you through Xcode and it's many different features to make a quintessentially "simple" app -- a "Tip Calculator". Every year this endeavor becomes simpler in some ways and more difficult in others. You will learn about using Xcode, building interfaces with _auto-layout_, and how to get an app running on your phone! Also, if you hail from a land that does not tip 15% - 20% at a restaurant, then you'll technically learn a bit about that too!
+This tutorial will walk you through Xcode and its many different features to make a quintessentially "simple" app -- a "Tip Calculator". Every year this endeavor becomes simpler in some ways and more difficult in others. You will learn about using Xcode, building interfaces with _auto-layout_, and how to get an app running on your phone! Also, if you hail from a land that does not tip 15% to 20% at a restaurant, then you'll technically learn a bit about that too!
 
 This tutorial should take you about 2 hours.
 
