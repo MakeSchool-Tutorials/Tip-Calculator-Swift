@@ -23,13 +23,13 @@ Can you feel the power? It is okay if you can't. The result on your screen can b
 
 # A brief history lesson
 
-Steve Jobs lost control at Apple and built a new company called NeXT. He was sued by Apple, and eventually was bought out by Apple. All the hard work of NeXT became the foundation for _Mac OS X_, _iOS_, _tvOS_ and _watchOS_.
+Steve Jobs lost control at Apple and built a new company called NeXT. He was sued by Apple, then was eventually was bought out by Apple. All the hard work of NeXT became the foundation for _Mac OS X_, _iOS_, _tvOS_ and _watchOS_.
 
-It gets even more interesting! When Apple first let 3rd party developers (you) make iOS applications, that rich history was brought to life again. How? The first iPhone has specs that were much closer to the products released by NeXT in the late 80s and early 90s than the MacBook's of its time. All of the efficiency of UI components that were meant for computers almost 30 years ago, meant that the iPhone felt snappy every time you interacted with it! It may not have felt that way with 2G internet attempting to load full desktop web pages, but once they were loaded things were buttery smooth. You could pan, zoom, and interact with a web page with your fingers for the first time in a natural and responsive way.
+It gets even more interesting! When Apple first let 3rd party developers (you) make iOS applications, that rich history was brought to life again. How? The first iPhone has specs that were much closer to the products released by NeXT in the late 80s and early 90s than the MacBooks of its time. All of the efficiency of UI components that were meant for computers almost 30 years ago, meant that the iPhone felt snappy every time you interacted with it! It may not have felt that way with 2G internet attempting to load full desktop web pages, but once they were loaded things were buttery smooth. You could pan, zoom, and interact with a web page with your fingers for the first time in a natural and responsive way.
 
-As a result, writing apps for the earlier versions of `iOS` meant using manual memory management -- something that new iOS may never have to do. This is especially the case with `Swift`. Don't worry though, there are plenty of ways to mess up with automatic memory management too! As you progress through our tutorials, we will highlight memory based issues and teach you how to build your apps to be the best!
+As a result, writing apps for the earlier versions of `iOS` meant using manual memory management -- something that new iOS may never have to do. This is especially the case with `Swift`, which provides automatic memory management. Don't worry though, there are plenty of ways to mess up with automatic memory management too! As you progress through our tutorials, we will highlight memory based issues and teach you how to build your apps to be the best!
 
-The last interesting point we will bring up about Xcode's roots? _XML_ and the _command line_. Every aspect of the _Xcode_ specific parts of your apps code base, are based in XML, and every project action (like building your app) can be done using command line tools included with Xcode. Why is this important? When you want to do something advanced in the future, these will come in handy. When you get a build error in _Xcode_ (that does not exist because of a warning or error), Xcode will make available the exact commands it used to build, and the output of what failed. Hopefully this is something you will not experience in your first year of using _Xcode_, but the first time it happens, remember this paragraph.
+The last interesting point we will bring up about Xcode's roots? _XML_ and the _command line_. The _Xcode_ specific parts of your app's code base are based in XML, and every project action (like building your app) can be done using command line tools included with Xcode. Why is this important? When you want to do something advanced in the future, these will come in handy. When you get a build error in _Xcode_, Xcode will make available the exact commands it used to build, and the output of what failed. Hopefully this is something you will not experience in your first year of using _Xcode_ (a build error, as opposed to a compilation error, which you'll have plenty of) but the first time it happens, remember this paragraph.
 
 # Exploring Xcode
 
@@ -44,16 +44,18 @@ Other than the _editor_ component located in the center of the window, there are
 
 You should see the `iOS Simulator` launch, and our exciting app (a blank white screen) is there in all of its retina perfection.
 
-But what about our Xcode window. Nothing changed? Hmm. Thats interesting. Here's why. Apple, is notorious for the polish they put into their products. But when you are a developer, you need power. There is a trade-off here, and it makes for an important lesson. The default settings for Xcode will show the debugger as needed. When you are done with it, you have to hide it yourself, but if you are using the screen built into your _MacBook_ and not a larger monitor, all of these things will overwhelm the area where you are actually working. There are multiple ways to do this. One is the `Behaviors` section in the `Preferences`, and the other is manually toggling these sections. If you ever find a time where one of these sections on your screen we are covering in this tutorial changes or pop-up _automatically_ that is considered a _behavior_ of _Xcode_ and can be edited by opening the Preferences menu -> Behaviors -> Running -> Generates Output.
+But what about our Xcode window. Nothing changed? Hmm. Thats interesting. Here's why: Apple is notorious for the polish they put into their products. But when you are a developer, you need power. There is a trade-off here, and it makes for an important lesson. The default settings for Xcode will show the debugger as needed. When you are done with it, you have to hide it yourself, but if you are using the screen built into your _MacBook_ and not a larger monitor, all of these things will overwhelm the area where you are actually working. There are multiple ways to do this. One is the `Behaviors` section in the `Preferences`, and the other is manually toggling these sections. If you ever find a time where one of these sections on your screen we are covering in this tutorial changes or pop-up _automatically_ that is considered a _behavior_ of _Xcode_ and can be edited by opening the Preferences menu -> Behaviors -> Running -> Generates Output.
 ![Preferences -> Behaviors -> Running -> Generates Output](./behavior_preferences.png)
 
 # Hiding and showing parts of the interface
 
-Everything else is controlled manually, and the best way to do that is with keyboard shortcuts. Sure, you can use your mouse and click on the _left_, _bottom_, and _right_ icon representations in the top right of your _Xcode_ window. ![Show Hide buttons](./show_hide_buttons.png)
+<!-- ACTION: this should be moved to below, after the interfaces are introduced by name -->
+
+Everything else is controlled manually, and the best way to do that is with keyboard shortcuts. Of course, you can also use your mouse and click on the _left_, _bottom_, and _right_ icon representations in the top right of your _Xcode_ window. ![Show Hide buttons](./show_hide_buttons.png)
 
 > [info]
 >
-Sure you can also toggle between sections using the little icons in each section. In fact, this is the way you should start off changing things when you are already using your preferred pointing device (mouse, trackpad, etc). But, when you are typing, you will want to learn the keyboard short cuts to get these things out of the way. When you are focused in code, these things usually get in your way, and are the least productive way to get around, and in many cases have settings, or information that are irrelevant to the task at hand. The choices for these sections are usually numbered, and the number `0` is usually reserved for hiding that section.
+Sure you can also toggle between sections using the little icons in each section. In fact, this is the way you should start off changing things when you are already using your preferred pointing device (mouse, trackpad, etc). But, when you are typing, you will want to learn the keyboard shortcuts to get these things out of the way. When you are focused in code, these things usually get in your way, and are the least productive way to get around, and in many cases have settings, or information that are irrelevant to the task at hand. The choices for these sections are usually numbered, and the number `0` is usually reserved for hiding that section.
 >
 ![View -> Navigators -> Show/Hide Navigator](./hide_navigator.png)
 >
@@ -64,6 +66,10 @@ Hiding the debug area is a bit different, its shortcut is `command-shift-y`.
 ![View -> Debug Area -> Show/Hide Debug Area](./hide_debug_area.png)
 
 # Overview of the areas
+
+<!-- ACTION: this needs an image pointing to each of the areas with labels -->
+
+<!-- ACTION: break this section into 3 subheaders, one for each area -->
 
 The `Utility Area` on the right side is essential when you are building interfaces. It contains an object browser on the bottom right, which you will use extensively for setting up your interfaces. It is also context sensitive to what you are editing. But we'll get to that shortly.
 
@@ -101,8 +107,12 @@ Hit `Run` or the `Play` button on the top left.
 
 Once you see the white screen of your app in the simulator, you should see the `Debug Area` popped up, with our _console_ output from the `print` statement.
 
+<!-- ACTION: this image needs a label pointing at the debug area -->
+
 ![A wild debug console appears!](./debug_console.png)
 
-See how its starting to feel a little crowded (if you are on a laptop)? You can hide the debug area now by using the keyboard shortcut, the view menu, the `bottom of the window` button on the top right of the window, or, the little `triangle in a box` icon on the top of the debug area.
+See how its starting to feel a little crowded (especially if you are on a laptop)? You can hide the debug area now by using the keyboard shortcut, the view menu, the `bottom of the window` button on the top right of the window, or, the little `triangle in a box` icon on the top of the debug area.
 
-There are a lot of ways to do even the simplest things in _Xcode_. Keep this in mind as you read tutorials, search for answers, and ask your peers for help. As you gain experience, you may be more productive with shortcuts, but if you have to teach someone else, you may want to start with the long way.
+<!-- ACTION: needs image pointing to these options -->
+
+There are a lot of ways to do even the simplest things in _Xcode_. Keep this in mind as you read tutorials, search for answers, and ask your peers for help. As you gain experience, you may be more productive with shortcuts, but when you're teaching someone else, you may want to start with the long way.
