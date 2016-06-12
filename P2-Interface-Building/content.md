@@ -19,15 +19,15 @@ Select `Main.storyboard` from the project navigator.
 
 Bask in its glory! In the `Utility Area` you can see a few attribute settings for the Storyboard, and some choices underneath in the `Object Browser`. Let's keep rolling.
 
-# Object Browser and Attributes Inspector
+# Adding a label
 
 >[action]
 > ## Adding a label
 >
 1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
 1. Click and drag the `Label` into the white square in the middle of the screen. You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
-1. The `Label` should be selected (you can tell by the box with resizing controls)
-1. Select the `Attributes Inspector` in the `Utility Area` (see the red circle below) there should be `Label` controls ![Opening the attributes inspector](./dragging_a_label.png)
+>
+![ms-video](./01_drag_label.mp4)
 
 Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
 
