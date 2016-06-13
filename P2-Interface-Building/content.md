@@ -12,6 +12,7 @@ If it's so good, why would you want to do it any other way? Thats a great questi
 
 >[action]
 > ## Opening the storyboard
+> Watch the video and follow the steps below:
 >
 Select `Main.storyboard` from the project navigator.
 >
@@ -23,9 +24,10 @@ Bask in its glory! In the `Utility Area` you can see a few attribute settings fo
 
 >[action]
 > ## Adding a label
+> Watch the video and follow the steps below:
 >
 1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
-1. Click and drag the `Label` into the white square in the middle of the screen. You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
+1. Click and drag the `Label` into the white square in the middle of the screen (dashed-line guides will appear). You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
 >
 ![ms-video](./01_drag_label.mp4)
 
@@ -34,13 +36,15 @@ Currently you are in the `Attributes Inspector` part of the `Utility Area`. In t
 >[action]
 > ## Changing the label's text
 >
-> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` ![Tip Calculator Label](./changing_the_label.png)
+> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`. Then set the `alignment` to `center`. ![ms-video](./02_change_label.mp4)
 
 Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that developers would have killed for back in 1988.
 
 # Constraints and Auto-Layout
 
-`Constraints` are an important part of a system called `Auto-Layout` that we can use to design our interface once, and have it automatically adjust to different screen sizes. It doesn't stop there, it can help if you want to support rotating the device and even other languages.
+`Constraints` are an important part of a system called `Auto-Layout` that we can use to design our interface once, and have it automatically adjust to different screen sizes. It doesn't stop there, it can help if you want to support rotating the device and even other languages. Watch this video for a quick intro to `Auto-Layout`.
+
+![ms-video-youtube](https://www.youtube.com/watch?v=MEhDeQurPqg)
 
 >[action]
 > ## Fixing the label alignment
@@ -51,7 +55,7 @@ Uh oh. The label is too small to display the full text. We could use the little 
 1. Click the _Resolve Auto-Layout Issues_ button (next to the _Pin_ button) and _Update Frames_.
 1. Center the text horizontally in the label from the _Attributes Inspector_.
 >
-> ![ms-video](../videos/label_autolayout.mp4)
+![ms-video](../videos/label_autolayout.mp4)
 
 Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit 20 pixels from the top, 20 pixels from the left, and 20 from the right. These are not magic numbers, and as you progress, you will get a better idea for how things should look on the screen of a handheld device. Apple has so many thoughts on the subject, that they publish _Human Interface Guidelines_ that you can follow the rules they propose for all _user interfaces_ that you design. Also, in the future you will probably work with designers who will spend large amounts of time thinking about how things should look, and then you can translate their design into the right values for the interface. For now, we have selected `20`.
 
