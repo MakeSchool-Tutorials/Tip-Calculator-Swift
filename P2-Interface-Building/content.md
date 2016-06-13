@@ -29,14 +29,14 @@ Bask in its glory! In the `Utility Area` you can see a few attribute settings fo
 1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
 1. Click and drag the `Label` into the white square in the middle of the screen (dashed-line guides will appear). You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
 >
-![ms-video](./01_drag_label.mp4)
+![ms-video](../videos/01_drag_label.mp4)
 
 Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
 
 >[action]
 > ## Changing the label's text
 >
-> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`. Then set the `alignment` to `center`. ![ms-video](./02_change_label.mp4)
+> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`. Then set the `alignment` to `center`. ![ms-video](../videos/02_change_label.mp4)
 
 Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that developers would have killed for back in 1988.
 
@@ -48,94 +48,64 @@ Uh oh. The label is too small to display the full text. We could use the little 
 
 >[action]
 > ## Fixing the label alignment
-> Watch the video and follow the steps below:
+> We want this label to be the top bar. To do this, we want the constraints to put it at the top and make it the full screen width. Watch the video and follow the steps below:
 >
-1. With the label selected, click the _Pin_ button on the bottom of the storyboard window.
-1. Add _constraints_ of 20 to the top, left, and right, save the constraints.
-1. Click the _Resolve Auto-Layout Issues_ button (next to the _Pin_ button) and _Update Frames_.
-1. Center the text horizontally in the label from the _Attributes Inspector_.
+1. With the label selected, hold `control` while clicking and dragging upwards. Let go and hold `option` so you can click `Top space to container margin`.
+1. With the label still selected, press the `Pin` button (it looks kind of like a tie fighter!).
+1. Click the left and right lines around the box in the popup to turn them red. Uncheck `Constrain to margins` and change the left and right values to `0`.
+1. Check `height` and set it to `80`.
+1. Click `add 3 constraints` and then click the `Resolve autolayout issues` button (looks like a tie fighter with a triangle), click `update frames`.
+1. The label is still in the center so we need to move it up! With the label selected, click the line going from it upwards and change `constant` to `0` in the  `Attributes Inspector`  (right side of screen).
 >
-![ms-video](../videos/label_autolayout.mp4)
+![ms-video](../videos/03_top_label_constraint.mp4)
 
-Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit 20 pixels from the top, 20 pixels from the left, and 20 from the right. These are not magic numbers, and as you progress, you will get a better idea for how things should look on the screen of a handheld device. Apple has so many thoughts on the subject, that they publish _Human Interface Guidelines_ that you can follow the rules they propose for all _user interfaces_ that you design. Also, in the future you will probably work with designers who will spend large amounts of time thinking about how things should look, and then you can translate their design into the right values for the interface. For now, we have selected `20`.
+Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit `0` pixels from the top, `0` pixels from the left, and `0` from the right. This forces it to match the full screen width!
 
-Next, we are going to need some place for the user to put in the amount of the bill.
+These are not magic numbers, and as you progress, you will get a better idea for how things should look on the screen of a handheld device. Apple has so many thoughts on the subject, that they publish _Human Interface Guidelines_ that you can follow the rules they propose for all _user interfaces_ that you design. Also, in the future you will probably work with designers who will spend large amounts of time thinking about how things should look, and then you can translate their design into the right values for the interface. For now, we have selected `0`.
 
-# Adding a bill amount label
+Next, we are going to start adding all the other interface labels and fields we'll need! We'll add them first and then start to fix the layout.
+
+# Adding all the elements
+
+We are going to get most of our layout on the screen all at once and then slowly fix it so it displays correctly. Our end goal is to have something that looks like this:
+
+![Correct layout with no color](./finished_no_color_logo.png)
 
 >[action]
 > Watch the video and follow the steps below:
 >
-1. Type label in the the object browser filter box.
-1. Drag label to the view.
-1. Change label text to `Bill Amount:`.
-1. Right-click and drag from label to view. select `center horizontally`.
-1. Choose the `size inspector`.
-1. Change the `align center x to` to `-50` (make sure to hit `-` twice).
-1. Right-click and drag from the label to the `Tip Calculator` label and select `Top`.
-1. Change the `Align Top To: Tip Calculator` to `50`.
-1. Click on the label again and `update frame`.
-1. Clear and type field in the the object browser filter box.
-1. Drag textfield to the view.
-1. Right-click and drag from textfield to view. select `center horizontally`.
-1. Change the `align center x` to 50.
-1. Right-click and drag from the label to the `Tip Calculator` label and select `Top`.
-1. Change the `Align Top To: Tip Calculator` to `50`.
-1. Right-click and drag from the label to the `Bill Amount` label and select `Equal Heights`.
-1. Pin the `width` to `75`
+1. Drag a `label` from the `Object Browser` onto the screen (slight below the top label and just a bit left of center)
+1. Drag a `text field` to the right of that label and use the guides to line up their centers.
+1. Click the `label` to select it, hold `shift` while clicking the `text field` to have them both selected.
+1. While holding `option`, click and drag the selected `label` and `text field` down to copy it (see video for relative spacing).
+1. Repeat the hold `option`, click and drag two more times so you have `4` pairs of `label` & `text field`.
+1. Drag a `button` from the `Object Browser` under the labels.
 >
-> ![ms-video](../videos/bill_amount.mp4)
-
-# Adding a tip percent label
-
-Okay, take a deep breath and get ready to do it again.
-
->[action]
-> Watch the video and follow the steps below:
->
-1. Option-click and drag the `Bill Amount:` label down a little bit.
-1. Double-click the new `Bill Amount:` label and change text to `Tip %:` and then hit enter.
-1. Clear object browser filter and type in `segment`.
-1. Drag segmented control.
-1. Select `Attributes Inspector`.
-1. Increase number of segments to `3`.
-1. Double click `First` and change to `15%`.
-1. Double click `Second` and change to `18%`.
-1. Double click ` ` (the empty third one) and change to `20%`.
->
-> ![ms-video](../videos/tip_percent.mp4)
+> ![ms-video](../videos/04_labels_button.mp4)
 
 # Checking out our work
 
-Great! We have a few labels now... Let's see how they look in the simulator.
+Great! We have a few labels and text fields now. Even a button! Let's see how they look in the simulator.
 
 >[action]
 >
-> Run the app and rotate the simulator to see how things move around when they are not set up with the proper pinning.
+> Run the app and rotate the simulator to see how things move around when they are not set up with the proper pinning and constraints. Half the content is off screen in portrait mode, but it actually looks pretty decent in landscape! Regardless, we have a bit more layout work to do...
 >
 You can rotate the simulator with `command + left/right arrow keys` or from the `Hardware menu -> Rotate Right / Left`.
+>
+> ![ms-video](../videos/05_running_it.mp4)
 
-Things are moving everywhere! Time to fix that.
+Things are moving everywhere! Let's see if we can fix it automatically...
 
 >[action]
 > ## Fixing it automatically?
 >
-1. Click the `Segmented Control` and click `Add Missing Constraints` from the _Resolve Auto-Layout Issues_ menu.
-1. Click the `Tip %:` and click `Add Missing Constraints`.
-1. Run the app and see how everything is messed up now. Rotate to see again how its messed up there as well. Rotate back to see how its consistent at being messed up.
+1. Click the any empty space near the bottom of the view (white square we are laying things out in).
+1. Click `Add Missing Constraints` from the _Resolve Auto-Layout Issues_ menu. Notice how a bunch of constraints are added on the left panel! Is this going to actually work...?
+1. Run the app and see how everything is still the same. Rotate to see again how its messed up there as well. Rotate back to see how its consistent at being messed up.
+1. Undo the changes with `control + z` (make sure to click back on the view first)
 
-Well that did not work. Let's undo it!
-
->[action]
-> ## Undoing the auto-constraints
-> Watch the video and follow the steps below:
->
-1. Use shift to select all the `Tip %:` and `15% 18%` constraints. And then hit delete to delete them.
-1. Right-click and drag from `Tip %:` to `Bill Amount:`. Select `Leading`.
-1. Right-click and drag from the `Segmented Control` to the `Text Field` select `Trailing`.
-1. Click the _Resolve Auto-Layout Issues_ button and _Update Frames_.
->
-> ![ms-video](../videos/delete_edit_constraints.mp4)
+Well that did not work :(
 
 Why did they do that? This is programming. In programming, the device does exactly what you tell it to. Nothing more, and nothing less. Most of the time, when something seems unexpected, you will feel like the device actually did more or less than it was asked. Almost every single time, that is not the case. It's user error.
 
@@ -143,31 +113,33 @@ Now, you may not have been the user that made the error. But since you have buil
 
 So how do we fix it? More constraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run. If you don't believe me, hover over the text alignment with a label selected and bask in the glory of the Objective-C message equivalent that will actually get run on your users devices. ![Objective-C message to set text alignment](./objc_message.png)
 
-# Fixing the spacing
+# Adding a segmented control
+
+Before we start to fix the layout, let's actually change the second text field to a `segmented control`. This will allow us to set up 3 options for tipping and make our interface a bit cleaner.
 
 >[action]
 > Watch the video and follow the steps below:
 >
-1. Right-click and drag from `Tip %:` to the `Bill Amount` label and select `Top`.
-1. Change the `Align Top To: Bill Amount` to `50`.
-1. Click on the label again and `update frame`.
-1. Right-click and drag from from the `Segmented Control` to the `Text Field` and select `Top`.
-1. Change the `Align Top To: Round Style...` to `50`.
-1. Click on the label again and click the _Resolve Auto-Layout Issues_ button, _Update Frames_.
+1. Click on the second `text field` to select it. Press `delete` on your keyboard to delete it!
+1. Drag a `Segmented Control` from the `Object Browser` into it's place (use the guides to position it).
+1. In the `Attributes Inspector`, change the `segments` from `2` to `3`.
 >
-> ![ms-video](../videos/spacing.mp4)
+> ![ms-video](../videos/08_adding_segment.mp4)
 
-# Fixing the centering
+# Fixing the widths
+
+For the sake of consistency, we want all the `text fields` to have a width of `85` and the `segmented control` to have a width of `125`. Let's pin them to the correct values!
 
 > [action]
 > Watch the video and follow the steps below:
 >
-1. Control-click (or right-click) and drag from the tip selector to the `tip %` label and choose center vertically.
-1. Click the _Resolve Auto-Layout Issues_ button and _Update Frames_.
+1. Click on the first `text field` to select it.
+1. Hold `shift` and click on the other two `text field`s to select them as well.
+1. Open the pin menu, check `width`, enter `85` and click `add 1 constraint` to apply the changes.
+1. Click on the `segmented control` and do the same but set the `width` to `125`
 >
-> ![ms-video](../videos/center_vertically.mp4)
+> ![ms-video](../videos/09_adding_widths.mp4)
 >
-Run the app and see how everything is looks much more consistent. Rotate it to see again how stays consistent. Rotate it back to see how it's still correct!
 
 # Easier previewing
 
@@ -176,36 +148,11 @@ We have previewing our UI by running the app. Which can get annoying if you are 
 >[action]
 >
 1. Click on the linked rings/venn diagram (needs screenshot) to open the `Assistant Editor`. ![Opening the assistant inspector](./assistant_inspector.png)
-1. Set it to preview (with screenshot).
+1. Click `Automatic` on the top bar and set it to `Preview`. ![Assistant preview](./preview.png)
 1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 5.5 inch'.
 1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 4 inch'.
-1. Close the `Navigation Area` [screenshot for button] to make more space. (or command-0).
 1. Drag the divider between the `editors` to make more space.
 
-Now you should have some sample devices without having to launch your code. This is not a perfect solution and may not work when using custom controls you download from the internet or create yourself in the future. There are ways now to make this work with these custom controls, but they may not be worth the tradeoff in time. For now, we decided to have two `iPhone 4 inch` devices so that you can see landscape mode at the same time.
+Now you should have some sample devices without having to launch your code. This is not a perfect solution and may not work when using custom controls you download from the internet or create yourself in the future. There are ways now to make this work with these custom controls, but they may not be worth the tradeoff in time. We will not be using this view in our videos because the screen space is precious! Feel free to keep this open if you have a big monitor (or even better, a second one)!
 
-# Adding the final controls
-
->[action]
-> Watch the video and follow the steps below:
->
-1. Option-click and drag the `Tip %:` label down a little bit.
-1. Double-click the new `Tip %:` label and change text to `Tip Amount:` and then hit enter.
-1. Option-click and drag the `Tip Amount:` label down a little bit.
-1. Double-click the new `Tip Amount:` label and change text to `Total Amount:` and then hit enter.
-1. Right-click and drag from `Tip Amount:` to the `Tip %` label and select `Top`.
-1. Right-click and drag from `Tip Amount:` to the `Tip %` label and select `Leading`.
-1. Change the `Align Top To: Tip %` to `50`.
-1. Right-click and drag from `Total Amount:` to the `Tip Amount` label and select `Top`.
-1. Right-click and drag from `Total Amount:` to the `Tip Amount` label and select `Leading`.
-1. Change the `Align Top To: Tip Amount` to `50`.
-1. Option-click and drag the text field next to the `Bill Amount` label down to line up with the `Tip Amount Label`.
-1. Right-click and drag from the new text field to the view. select `center horizontally`.
-1. Change the `align center x to` to `50`.
-1. Right-click and drag from the new text field to the `Tip Amount` label and select `Equal Heights`.
-1. Option-click and drag the new text field next to the `Tip Amount` label down to line up with the `Total Amount Label`.
-1. Right-click and drag from the new text field to the view. select `center horizontally`.
-1. Change the `align center x to` to `50`.
-1. Right-click and drag from the new text field to the `Total Amount` label and select `Equal Heights`.
->
-> ![ms-video](../videos/final_controls.mp4)
+Let's move on to the next page and fix up this layout!

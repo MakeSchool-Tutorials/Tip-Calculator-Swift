@@ -15,6 +15,8 @@ Running your code on your device used to be a complicated process that required 
 1. Click the `Run` button again.
 >You may get an error that the device is not available yet because it is processing symbols. If so, there will be a progress bar you can watch while you wait. Then you can run it again. ![Processing symbols](./processing_symbols.png)
 
+# Trusting yourself
+
 But wait! Thats not all! Apple is very serious about security, and when you `side-load` apps, they have not been screened in the same way ones from the _App Store_ have, so you have to Trust the profile that _Xcode_ just created for you that lets you run apps on your phone.
 
 ![Trusting yourself](./untrusted_developer.jpg)
