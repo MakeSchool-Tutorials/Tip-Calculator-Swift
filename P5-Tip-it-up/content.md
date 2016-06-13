@@ -43,24 +43,24 @@ Now that we have some _outlets_ and _actions_, we can actually code our logic. S
 ```
 @IBAction func calculateTip(sender: AnyObject) {
     guard let billAmount = Double(billAmountField.text!) else {
-      //show error
-      billAmount.text = ""
-      tipAmountField.text = ""
-      totalAmountField.text = ""
-      return
+        //show error
+        billAmountField.text = ""
+        tipAmountField.text = ""
+        totalAmountField.text = ""
+        return
     }
 >
     var tipPercentage = 0.0
->
+>    
     switch tipSelector.selectedSegmentIndex {
     case 0:
-      tipPercentage = 0.15
+        tipPercentage = 0.15
     case 1:
-      tipPercentage = 0.18
+        tipPercentage = 0.18
     case 2:
-      tipPercentage = 0.20
+        tipPercentage = 0.20
     default:
-      break
+        break
     }
 >
     let roundedBillAmount = round(100*billAmount)/100
@@ -69,7 +69,7 @@ Now that we have some _outlets_ and _actions_, we can actually code our logic. S
     let totalAmount = roundedBillAmount + roundedTipAmount
 >
     if (!billAmountField.editing) {
-      billAmountField.text = String(format: "%.2f", roundedBillAmount)
+        billAmountField.text = String(format: "%.2f", roundedBillAmount)
     }
     tipAmountField.text = String(format: "%.2f", roundedTipAmount)
     totalAmountField.text = String(format: "%.2f", totalAmount)
