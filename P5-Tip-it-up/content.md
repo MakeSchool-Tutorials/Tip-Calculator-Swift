@@ -25,7 +25,7 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 1. Control-click (or right-click) drag from the `calculate` button to the view controller. Choose `Action` and name it `calculateTip`.
 1. Add some space to clean up the file.
 >
-> ![ms-video](../videos/17_outlets_and_actions.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/17_outlets_and_actions.mp4)
 
 # Adding the logic
 
@@ -89,6 +89,6 @@ Run it and give it a spin! Do you understand the code? Hover over the _Solution_
 
 Now that we have an interface, code connections, and logic... let's test it all out! Run the simulator and try calculating a tip :)
 
-![ms-video](../videos/18_testing_the_code.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/18_testing_the_code.mp4)
 
 Looking good! Everything seems to work. On the next page, we'll make some small UI improvements before moving on to a more substantial app!
