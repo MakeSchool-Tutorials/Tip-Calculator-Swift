@@ -16,12 +16,12 @@ Applications that designers use such as _Sketch_ allow *exporting* all versions 
 Let's do that now!
 
 > [action]
-> ## Importing into Images.xcassets
+> ## Importing into Assets.xcassets
 > Watch the video and follow the steps below:
 >
 1. Download the [art pack](https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift/raw/master/logo.zip) for this tutorial.
 1. Unzip the downloaded art pack (by double-clicking the downloaded folder).
-1. Select *Images.xcassets* from the project navigator.
+1. Select *Assets.xcassets* from the project navigator.
 1. Drag the unzipped folder into the empty space.
 >
 Note: if you don't name the files this way, you have to manually import each version of each asset, and it takes up way more time.
