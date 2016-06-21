@@ -47,8 +47,6 @@ You should see the `iOS Simulator` launch, and our exciting app (a blank white s
 But what about our Xcode window. Nothing changed? Hmm. Thats interesting. Here's why: Apple is notorious for the polish they put into their products. But when you are a developer, you need power. There is a trade-off here, and it makes for an important lesson. The default settings for Xcode will show the debugger as needed. When you are done with it, you have to hide it yourself, but if you are using the screen built into your _MacBook_ and not a larger monitor, all of these things will overwhelm the area where you are actually working. There are multiple ways to do this. One is the `Behaviors` section in the `Preferences`, and the other is manually toggling these sections. If you ever find a time where one of these sections on your screen we are covering in this tutorial changes or pop-up _automatically_ that is considered a _behavior_ of _Xcode_ and can be edited by opening the Preferences menu -> Behaviors -> Running -> Generates Output.
 ![Preferences -> Behaviors -> Running -> Generates Output](./behavior_preferences.png)
 
-![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/01_drag_label.mp4)
-
 # Overview of the areas
 
 ![Overview of Xcode](./exploring_xcode.png)
