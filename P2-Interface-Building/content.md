@@ -12,7 +12,7 @@ If it's so good, why would you want to do it any other way? Thats a great questi
 
 >[action]
 > ## Opening the storyboard
-> Watch the video and follow the steps below:
+> Follow the steps below:
 >
 Select `Main.storyboard` from the project navigator.
 >
