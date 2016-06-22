@@ -16,17 +16,17 @@ Applications that designers use such as _Sketch_ allow *exporting* all versions 
 Let's do that now!
 
 > [action]
-> ## Importing into Images.xcassets
+> ## Importing into Assets.xcassets
 > Watch the video and follow the steps below:
 >
 1. Download the [art pack](https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift/raw/master/logo.zip) for this tutorial.
 1. Unzip the downloaded art pack (by double-clicking the downloaded folder).
-1. Select *Images.xcassets* from the project navigator.
+1. Select *Assets.xcassets* from the project navigator.
 1. Drag the unzipped folder into the empty space.
 >
 Note: if you don't name the files this way, you have to manually import each version of each asset, and it takes up way more time.
 >
-![ms-video](../videos/19_add_assets.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/19_add_assets.mp4)
 
 You should also note that we don't reference images in asset catalogs by their file name, but instead by the name of their Image Set. For this project, we only have "logo" but in the future we'll have more.
 
@@ -46,7 +46,7 @@ Let's add the Make School logo to our tip calculator!
 1. Select the new constraint, change it's `relation` to `greater than or equal` and it's `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
 1. Don't panic yet, but our `calculate` button just disappeared!
 >
-![ms-video](../videos/20_adding_logo.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/20_adding_logo.mp4)
 
 # The case of a disappearing button!
 
@@ -60,7 +60,7 @@ Setting the new constraints to fit a logo made our `calculate` button disappear!
 1. Press `enter` on your keyboard or click `add 1 constraint`. Our button is back!
 1. The app and admire our handy work!
 >
-![ms-video](../videos/21_fix_button.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/21_fix_button.mp4)
 
 # A splash of color
 
@@ -76,7 +76,7 @@ Now lets add some color to make this app stand out even more.
 1. Close the colors selector. (It is blocking the next setting we want to click).
 1. Now, notice the `Color` setting, currently set to black. Click the right side of that control (the blue part with arrowheads or carets), and select `White Color` from the drop down menu. Or use the _eye-dropper_ to sample white from our logo.
 1. Select the `calculate` button and go through the same steps to make the `background` blue and the text white.
-1. Run the app and admire how nice it looks with color! ![ms-video](../videos/22_adding_color.mp4)
+1. Run the app and admire how nice it looks with color! ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/22_adding_color.mp4)
 1. Open `ViewController.swift` and add the following code to make the iPhone status bar a bit prettier:
 >
 ```
@@ -95,6 +95,6 @@ Now that you have running it on your device, you may have noticed some UX/UI bug
 1. Select the `Tip Amount Field` and using the `Attributes Inspector`, disable this field by unchecking `Enabled` in the `Control` section.
 1. Do the same for `Total Amount Field`
 >
-![ms-video](../videos/23_change_keyboard.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/23_change_keyboard.mp4)
 
 Wow, now things are looking pretty professional. Nice work for your first app!

@@ -29,14 +29,14 @@ Bask in its glory! In the `Utility Area` you can see a few attribute settings fo
 1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
 1. Click and drag the `Label` into the white square in the middle of the screen (dashed-line guides will appear). You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
 >
-![ms-video](../videos/01_drag_label.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/01_drag_label.mp4)
 
 Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
 
 >[action]
 > ## Changing the label's text
 >
-> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`. Then set the `alignment` to `center`. ![ms-video](../videos/02_change_label.mp4)
+> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`. Then set the `alignment` to `center`. ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/02_change_label.mp4)
 
 Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that developers would have killed for back in 1988.
 
@@ -57,7 +57,7 @@ Uh oh. The label is too small to display the full text. We could use the little 
 1. Click `add 3 constraints` and then click the `Resolve autolayout issues` button (looks like a tie fighter with a triangle), click `update frames`.
 1. The label is still in the center so we need to move it up! With the label selected, click the line going from it upwards and change `constant` to `0` in the  `Attributes Inspector`  (right side of screen).
 >
-![ms-video](../videos/03_top_label_constraint.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/03_top_label_constraint.mp4)
 
 Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit `0` pixels from the top, `0` pixels from the left, and `0` from the right. This forces it to match the full screen width!
 
@@ -81,7 +81,7 @@ We are going to get most of our layout on the screen all at once and then slowly
 1. Repeat the hold `option`, click and drag two more times so you have `4` pairs of `label` & `text field`.
 1. Drag a `button` from the `Object Browser` under the labels.
 >
-> ![ms-video](../videos/04_labels_button.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/04_labels_button.mp4)
 
 # Checking out our work
 
@@ -93,7 +93,7 @@ Great! We have a few labels and text fields now. Even a button! Let's see how th
 >
 You can rotate the simulator with `command + left/right arrow keys` or from the `Hardware menu -> Rotate Right / Left`.
 >
-> ![ms-video](../videos/05_running_it.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/05_running_it.mp4)
 
 Things are moving everywhere! Let's see if we can fix it automatically...
 
@@ -124,7 +124,7 @@ Before we start to fix the layout, let's actually change the second text field t
 1. Drag a `Segmented Control` from the `Object Browser` into it's place (use the guides to position it).
 1. In the `Attributes Inspector`, change the `segments` from `2` to `3`.
 >
-> ![ms-video](../videos/08_adding_segment.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/08_adding_segment.mp4)
 
 # Fixing the widths
 
@@ -138,7 +138,7 @@ For the sake of consistency, we want all the `text fields` to have a width of `8
 1. Open the pin menu, check `width`, enter `85` and click `add 1 constraint` to apply the changes.
 1. Click on the `segmented control` and do the same but set the `width` to `125`
 >
-> ![ms-video](../videos/09_adding_widths.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/09_adding_widths.mp4)
 >
 
 # Easier previewing
