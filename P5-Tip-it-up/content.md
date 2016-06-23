@@ -28,10 +28,10 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/17_outlets_and_actions.mp4)
 
 # Adding keyboard functionality
-round(20.20)
+
 >[info]
 >
-In order to ensure that the keyboard shows up for our text fields, we need to set their delegates to be their containing view controller; in this case, that would be `ViewController.swift`. In order to do that, we first need to ensure that the view controller in question conforms to the UITextFieldDelegate protocol. 
+In order to ensure that the keyboard shows up for our text fields, we need to set their delegates to be their containing view controller; in this case, that would be `ViewController.swift`. In order to do that, we first need to ensure that the view controller in question conforms to the UITextFieldDelegate protocol.
 
 <!--  -->
 
