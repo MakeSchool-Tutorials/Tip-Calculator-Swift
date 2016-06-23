@@ -5,7 +5,7 @@ slug: adding-the-logic
 
 ## Linking your interface to code
 
-_Xcode_ makes it easy to connect your interface to code. Now that we've got an interace
+_Xcode_ makes it easy to connect your interface to code. Now that we've got an interface
 
 >[info]
 >
@@ -26,6 +26,22 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 1. Add some space to clean up the file.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/17_outlets_and_actions.mp4)
+
+# Adding keyboard functionality
+
+>[info]
+>
+In order to ensure that the keyboard shows up for our text fields, we need to set their delegates to be their containing view controller; in this case, that would be `ViewController.swift`. In order to do that, we first need to ensure that the view controller in question conforms to the UITextFieldDelegate protocol.
+
+<!--  -->
+
+>[action]
+> ## Conforming to the text field delegate
+>
+1. Subscribe `ViewController.swift` to the `UITextFieldDelegate` by replacing your class definition line with the following: `class ViewController: UIViewController, UITextFieldDelegate {`
+1. Within `viewDidLoad()`, add the following line: `billAmountField.delegate = self`
+1. Repeat _Step 2_ for all of the remaining text fields
+>
 
 # Adding the logic
 
