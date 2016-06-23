@@ -97,4 +97,9 @@ Now that you have running it on your device, you may have noticed some UX/UI bug
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/23_change_keyboard.mp4)
 
+<!--  -->
+
+>[info]
+>This might output an error in the simulator. But do not worry! It will work on your physical device :)
+
 Wow, now things are looking pretty professional. Nice work for your first app!
