@@ -5,7 +5,7 @@ slug: adding-the-logic
 
 ## Linking your interface to code
 
-_Xcode_ makes it easy to connect your interface to code. Now that we've got an interface
+_Xcode_ makes it easy to connect your interface to code. Now that we've got an interface let's get it hooked up to our code files!
 
 >[info]
 >
