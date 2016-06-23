@@ -38,17 +38,8 @@ In order to ensure that the keyboard shows up for our text fields, we need to se
 >[action]
 > ## Conforming to the text field delegate
 >
-1. Subscribe `ViewController.swift` to the `UITextFieldDelegate` by replacing your class definition line with the following:
-
-```
-class ViewController: UIViewController, UITextFieldDelegate {
-```
-1. Within `viewDidLoad()`, add the following line:
-
-```
-billAmountField.delegate = self
-```
-
+1. Subscribe `ViewController.swift` to the `UITextFieldDelegate` by replacing your class definition line with the following: `class ViewController: UIViewController, UITextFieldDelegate {`
+1. Within `viewDidLoad()`, add the following line: `billAmountField.delegate = self`
 1. Repeat _Step 2_ for all of the remaining text fields
 >
 
