@@ -50,6 +50,7 @@ billAmountField.delegate = self
 ```
 
 1. Repeat _Step 2_ for all of the remaining text fields
+>
 
 # Adding the logic
 
