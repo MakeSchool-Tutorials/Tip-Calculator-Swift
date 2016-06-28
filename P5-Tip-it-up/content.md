@@ -27,52 +27,6 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/17_outlets_and_actions.mp4)
 
-# Adding keyboard functionality
-
->[info]
->
-In order to ensure that the keyboard shows up for our text fields, we need to set their delegates to be their containing view controller; in this case, that would be `ViewController.swift`. In order to do that, we first need to ensure that the view controller in question conforms to the UITextFieldDelegate protocol. This will allow the view controller to pop-up a keyboard whenever the text field is tapped on.
-
-<!--  -->
-
->[action]
-> ## Conforming to the text field delegate
->
-1. Subscribe `ViewController` to the `UITextFieldDelegate` by replacing your class definition line with the following: `class ViewController: UIViewController, UITextFieldDelegate {`
-1. Within `viewDidLoad()`, add the following line: `billAmountField.delegate = self`
-
-<!--  -->
-
->[solution]
-> Your `ViewController.swift` file should look something like this:
->
-```
-import UIKit
->
-class ViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet weak var billAmountField: UITextField!
-    @IBOutlet weak var tipSelector: UISegmentedControl!
-    @IBOutlet weak var tipAmountField: UITextField!
-    @IBOutlet weak var totalAmountField: UITextField!
->
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        billAmountField.delegate = self
-    }
->
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
->
-    @IBAction func calculateTip(sender: AnyObject) {
->
-    }
->
-}
-```
-
 # Adding the logic
 
 > [info]
