@@ -80,8 +80,8 @@ Now lets add some color to make this app stand out even more.
 1. Open `ViewController.swift` and add the following code to make the iPhone status bar a bit prettier:
 >
 ```
-override func preferredStatusBarStyle() -> UIStatusBarStyle {
-  return .LightContent
+override var preferredStatusBarStyle: UIStatusBarStyle {
+  return .lightContent
 }
 ```
 
