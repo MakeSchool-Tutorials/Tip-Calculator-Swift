@@ -40,9 +40,9 @@ Let's add the Make School logo to our tip calculator!
 1. Open `Main.Storyboard`.
 1. Open the layout tree and attribute inspector.
 1. Drag an `Image View` from the object browser to just below the calculate button and _into_ the super stack view. It should show a purple line and say super stack view (see video).
-1. Set the `image` for the image view to `logo` from the  `Attributes Inspector`.
+1. Set the `image` for the image view to "logo" from the `Attributes Inspector`.
 1. `control` + `click and drag` from the image to the image to set an `aspect ratio` constraint for `1:1` (see video).
-1. `control` + `click and drag` from super stack view in the layout tree to the empty white space in the view square and add a `vertical spacing to bottom layout guide` constraint.
+1. `control` + `click and drag` from super stack view in the layout tree to the empty white space in the parent view and add a `vertical spacing to bottom layout guide` constraint.
 1. Select the new constraint, change its `relation` to `greater than or equal` and its `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
 1. Don't panic yet, but our `calculate` button just disappeared!
 >
