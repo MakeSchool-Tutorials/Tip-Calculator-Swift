@@ -121,7 +121,7 @@ Before we start to fix the layout, let's actually change the second text field t
 > Watch the video and follow the steps below:
 >
 1. Click on the second `text field` to select it. Press `delete` on your keyboard to delete it!
-1. Drag a `Segmented Control` from the `Object Browser` into it's place (use the guides to position it).
+1. Drag a `Segmented Control` from the `Object Browser` into its place (use the guides to position it).
 1. In the `Attributes Inspector`, change the `segments` from `2` to `3`.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/08_adding_segment.mp4)

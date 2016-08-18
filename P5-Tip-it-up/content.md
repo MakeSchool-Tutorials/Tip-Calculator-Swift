@@ -33,7 +33,7 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 >
 > Before we get started with the logic, we need to go over a new Swift concept! Let's talk about `guard` statements...
 >
-> `guard` is a special conditional statement that must `return` or throw an error if the condition is not met. In the code below, we are saying "if we cannot cast `billAmountField.text` to a `Double` and save it to `billAmount`, then we should stop what we are doing and clear the fields". If the condition _is_ met, then the function can continue. `guard` is different from `if` because it adds anything it unwraps to it's parent scope -- the scope it was called from!
+> `guard` is a special conditional statement that must `return` or throw an error if the condition is not met. In the code below, we are saying "if we cannot cast `billAmountField.text` to a `Double` and save it to `billAmount`, then we should stop what we are doing and clear the fields". If the condition _is_ met, then the function can continue. `guard` is different from `if` because it adds anything it unwraps to its parent scope -- the scope it was called from!
 
 Now that we have some _outlets_ and _actions_, we can actually code our logic. Since this tutorial is about _Xcode_, not programming, we are going to give you the logic. Study the code below and make sure you understand the logic!
 

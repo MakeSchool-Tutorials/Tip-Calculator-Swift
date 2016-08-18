@@ -43,7 +43,7 @@ Let's add the Make School logo to our tip calculator!
 1. Set the `image` for the image view to `logo` from the  `Attributes Inspector`.
 1. `control` + `click and drag` from the image to the image to set an `aspect ratio` constraint for `1:1` (see video).
 1. `control` + `click and drag` from super stack view in the layout tree to the empty white space in the view square and add a `vertical spacing to bottom layout guide` constraint.
-1. Select the new constraint, change it's `relation` to `greater than or equal` and it's `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
+1. Select the new constraint, change its `relation` to `greater than or equal` and its `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
 1. Don't panic yet, but our `calculate` button just disappeared!
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/20_adding_logo.mp4)
