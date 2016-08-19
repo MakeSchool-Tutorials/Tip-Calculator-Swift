@@ -51,10 +51,10 @@ Uh oh. The label is too small to display the full text. We could use the little 
 > We want this label to be the top bar. To do this, we want the constraints to put it at the top and make it the full screen width. Watch the video and follow the steps below:
 >
 1. With the label selected, hold `control` while clicking and dragging upwards. Let go and hold `option` so you can click `Top space to container margin`.
+1. With the label still selected, control-click (or right-click) drag from the label to the parent `View`. In the menu that appears, select `Equal Widths`.  
 1. With the label still selected, press the `Pin` button (it looks kind of like a tie fighter!).
-1. Click the left and right lines around the box in the popup to turn them red. Uncheck `Constrain to margins` and change the left and right values to `0`.
 1. Check `height` and set it to `80`.
-1. Click `add 3 constraints` and then click the `Resolve autolayout issues` button (looks like a tie fighter with a triangle), click `update frames`.
+1. Click `Add 1 Constraint` and then click the `Resolve Auto Layout Issues` button (looks like a tie fighter with a triangle), click `update frames`.
 1. The label is still in the center so we need to move it up! With the label selected, click the line going from it upwards and change `constant` to `0` in the  `Attributes Inspector`  (right side of screen).
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/03_top_label_constraint.mp4)
