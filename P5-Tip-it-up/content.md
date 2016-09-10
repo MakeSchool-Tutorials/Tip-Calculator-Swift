@@ -68,7 +68,7 @@ Now that we have some _outlets_ and _actions_, we can actually code our logic. S
     let roundedTipAmount = round(100*tipAmount)/100
     let totalAmount = roundedBillAmount + roundedTipAmount
 >
-    if (!billAmountField.editing) {
+    if (!billAmountField.isEditing) {
         billAmountField.text = String(format: "%.2f", roundedBillAmount)
     }
     tipAmountField.text = String(format: "%.2f", roundedTipAmount)
