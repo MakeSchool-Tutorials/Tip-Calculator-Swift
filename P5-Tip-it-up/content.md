@@ -31,9 +31,9 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 
 > [info]
 >
-> Before we get started with the logic, we need to go over a new Swift concept! Let's talk about `if let` statements...
+> Before we get started with the logic, we need to go over a new Swift concept! Let's talk about `guard` statements...
 >
-> `if let` is a special statement that allows us to check the condition of a variable and perform actions based on that condition. In the code below, we are saying `if you can cast `billAmount` to a `Double` and save it to  a new variable called `billAmount`, then do nothing. However, if you cannot do this, then we should stop what we are doing and clear the fields". If the condition _is_ met, then the function can continue.
+> `guard` is a special conditional statement that must `return` or throw an error if the condition is not met. In the code below, we are saying "if we cannot cast `billAmountField.text` to a `Double` and save it to `billAmount`, then we should stop what we are doing and clear the fields". If the condition _is_ met, then the function can continue. `guard` is different from `if` because it adds anything it unwraps to it's parent scope -- the scope it was called from!
 
 Now that we have some _outlets_ and _actions_, we can actually code our logic. Since this tutorial is about _Xcode_, not programming, we are going to give you the logic. Study the code below and make sure you understand the logic!
 
@@ -42,12 +42,12 @@ Now that we have some _outlets_ and _actions_, we can actually code our logic. S
 >
 ```
 @IBAction func calculateTip(sender: AnyObject) {
-    if let billAmount = Double(billAmountField.text!) {
-    } else {
+    guard let billAmount = Double(billAmountField.text!) else {
         //show error
         billAmountField.text = ""
         tipAmountField.text = ""
         totalAmountField.text = ""
+        return
     }
 >
     var tipPercentage = 0.0
@@ -81,9 +81,9 @@ Run it and give it a spin! Do you understand the code? Hover over the _Solution_
 <!--  -->
 
 > [solution]
-> The `calculateTip` function starts off with a `if let` statement. If `billAmount` does not contain a number, it resets all of the fields.
+> The `calculateTip` function starts off with a `guard` statement. If `billAmount` does not contain a number, it resets all the fields and returns immediately.
 >
-> If it does have a number, then the function continues. It uses a `switch` statement to read the segmented control and set `tipPercentage`. It then calculates the `tipAmount` and `totalAmount`. Finally, it updates the respective text fields.
+> If it does have a number, the function continues. It uses a `switch` statement to read the segmented control and set `tipPercentage`. It then calculates the `tipAmount` and `totalAmount`. Finally, it updates the respective text fields.
 
 # Testing it out
 
