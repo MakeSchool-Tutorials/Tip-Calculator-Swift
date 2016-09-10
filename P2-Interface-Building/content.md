@@ -100,7 +100,7 @@ Things are moving everywhere! Let's see if we can fix it automatically...
 >[action]
 > ## Fixing it automatically?
 >
-1. Within the view hierarchy, ensure that the "View Controller" is selected.
+1. Click the any empty space near the bottom of the view (white square we are laying things out in).
 1. Click `Add Missing Constraints` from the _Resolve Auto-Layout Issues_ menu. Notice how a bunch of constraints are added on the left panel! Is this going to actually work...?
 1. Run the app and see how everything is still the same. Rotate to see again how its messed up there as well. Rotate back to see how its consistent at being messed up.
 1. Undo the changes with `control + z` (make sure to click back on the view first)
@@ -111,7 +111,7 @@ Why did they do that? This is programming. In programming, the device does exact
 
 Now, you may not have been the user that made the error. But since you have built on top of someone else's error, it is your problem now. If this error proves to be critical, you will have to _work-around_ it, file a bug report, or maybe even fix it yourself. But we're not talking about low-level components of the operating system here, or even Xcode. We are talking about _auto-layout_!
 
-So how do we fix it? More constraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run.
+So how do we fix it? More constraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run. If you don't believe me, hover over the text alignment with a label selected and bask in the glory of the Objective-C message equivalent that will actually get run on your users devices. ![Objective-C message to set text alignment](./objc_message.png)
 
 # Adding a segmented control
 
