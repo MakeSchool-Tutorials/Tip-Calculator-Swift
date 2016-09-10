@@ -94,9 +94,8 @@ Do you see how the `label` and element pairs are still squished together? Let's 
 > Watch the video and follow the steps below:
 >
 1. Close the stack view rows in the layout tree to make this a bit easier.
-1. Select `Bill Amount Stack View`, open the `pin` menu and add a constraint to the left side. Set it to `0` and click `add 1 constraint`. That's all we needed for that row! Since the each stack view row is already centered, the view will also expand on the other side :)
-1. Repeat this process for each other stack view row and the calculate button.
-
+1. Select `Bill Amount Stack View`, control-click (or right-click) drag from the `Bill Amount Stack View` to the `Super Stack View` and, in the menu that appears, select `Equal Widths`. This will ensure that the row is always the same width as the `Super Stack View`.
+1. Repeat this process for each other stack view row and the `Calculate` button.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/15_fix_stackview_rows.mp4)
 
