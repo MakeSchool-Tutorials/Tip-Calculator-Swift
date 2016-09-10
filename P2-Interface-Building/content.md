@@ -75,7 +75,7 @@ We are going to get most of our layout on the screen all at once and then slowly
 > Watch the video and follow the steps below:
 >
 1. Drag a `label` from the `Object Browser` onto the screen (slight below the top label and just a bit left of center)
-1. Drag a `text field` to the right of that label and use the guides to line up their centers.
+1. Drag a `text field` to the right of that label and use the guides to line up their vertical centers.
 1. Click the `label` to select it, hold `shift` while clicking the `text field` to have them both selected.
 1. While holding `option`, click and drag the selected `label` and `text field` down to copy it (see video for relative spacing).
 1. Repeat the hold `option`, click and drag two more times so you have `4` pairs of `label` & `text field`.
@@ -100,7 +100,8 @@ Things are moving everywhere! Let's see if we can fix it automatically...
 >[action]
 > ## Fixing it automatically?
 >
-1. Within the view hierarchy, ensure that the "View Controller" is selected.
+
+1. Click the empty space near the bottom of the view (the area in which we are laying things out).
 1. Click `Add Missing Constraints` from the _Resolve Auto-Layout Issues_ menu. Notice how a bunch of constraints are added on the left panel! Is this going to actually work...?
 1. Run the app and see how everything is still the same. Rotate to see again how its messed up there as well. Rotate back to see how its consistent at being messed up.
 1. Undo the changes with `control + z` (make sure to click back on the view first)
@@ -121,7 +122,7 @@ Before we start to fix the layout, let's actually change the second text field t
 > Watch the video and follow the steps below:
 >
 1. Click on the second `text field` to select it. Press `delete` on your keyboard to delete it!
-1. Drag a `Segmented Control` from the `Object Browser` into it's place (use the guides to position it).
+1. Drag a `Segmented Control` from the `Object Browser` into its place (use the guides to position it).
 1. In the `Attributes Inspector`, change the `segments` from `2` to `3`.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/08_adding_segment.mp4)
@@ -135,7 +136,7 @@ For the sake of consistency, we want all the `text fields` to have a width of `8
 >
 1. Click on the first `text field` to select it.
 1. Hold `shift` and click on the other two `text field`s to select them as well.
-1. Open the pin menu, check `width`, enter `85` and click `add 1 constraint` to apply the changes.
+1. Open the pin menu, check `width`, enter `85` and click `add 3 constraints` to apply the changes.
 1. Click on the `segmented control` and do the same but set the `width` to `125`
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/09_adding_widths.mp4)
@@ -143,7 +144,7 @@ For the sake of consistency, we want all the `text fields` to have a width of `8
 
 # Easier previewing
 
-We have previewing our UI by running the app. Which can get annoying if you are working somewhere deep in the app, and want to test it out on multiple devices. You can use the `Assistant Editor` to display a preview of the screen you are working on across multiple devices.
+We can preview our UI by running the app. This can get annoying if you are working somewhere deep in the app and want to test it out on multiple devices. Instead, you can use the `Assistant Editor` to display a preview of the screen you are working on across multiple devices.
 
 >[action]
 >

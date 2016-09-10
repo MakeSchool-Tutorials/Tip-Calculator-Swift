@@ -54,7 +54,7 @@ But what about our Xcode window. Nothing changed? Hmm. Thats interesting. Here's
 
 ## Navigator Area
 
-Let's jump right into the `Navigator Area` on the left side. Currently, it should display the _Project Navigator_ which is where you will find files related to your project. If the files are not in here, then your app will not be able to use them. It doesn't matter if they are in the same folder as other included files, Xcode manages it's own files so they must show up in the _Project Navigator_!
+Let's jump right into the _Navigator_ on the left side. Currently, it should display the _Project Navigator_ which is where you will find files related to your project. If the files are not in here, then your app will not be able to use them. It doesn't matter if they are in the same folder as other included files, Xcode manages its own files so they must show up in the _Project Navigator_!
 
 ## Utility Area
 
