@@ -15,11 +15,10 @@ slug: first-project
 1. For `Organization Identifier`, you use a reverse domain name style base for your apps. If you own `supercoolsecretstudios.com` you would put `com.supercoolsecretstudios`. If you don't own a domain name, feel free to put `com.makeschool` for this project.
 1. Select `Swift` as the `Language` and `iPhone` as the `Devices`, and `User Interface` as `Storyboard`.
 1. Leave `Use Core Data` and the other two boxes regarding _tests_ unchecked.
-1. 
-1. Click `Next` and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, _Xcode_ will handle it for you.
-1. Keep the `Create Git Repository on My Mac` checkbox selected, and click `Create`
 1. Check that your Xcode project looks similar to this screenshot
 ![Creating a new project settings](./new-project.png)
+1. Click `Next` and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, _Xcode_ will handle it for you.
+1. Keep the `Create Git Repository on My Mac` checkbox selected, and click `Create`
 
 Can you feel the power? It is okay if you can't. The result on your screen can be very overwhelming at first. Parts of this software such as the _Interface Builder_ date back to 1988, and _Xcode_ itself dates back to something called _Project Builder_ -- first released in 1992! There is a lot of interesting history around this Xcode.
 
